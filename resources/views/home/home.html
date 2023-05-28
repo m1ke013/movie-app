@@ -1,0 +1,1765 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>XMovies</title>
+
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
+    <link href="./scss/custom.css" rel="stylesheet" media="all">
+    <link href="./node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css" rel="stylesheet" media="all">
+    <link href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" media="all">
+    <link href="./node_modules/@fortawesome/fontawesome-free/css/brands.min.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/solid.min.css" media="all">
+    <link href="./node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf">
+  </head>
+  <body>
+    
+    <header class="main-header static">
+        <div class="container">
+            <div id="menu-toggler">
+                <i class="fa-solid fa-list-ul"></i>
+            </div>
+            <a href="index.html" id="logo">
+              <img src="./assets/images/logo2.png">
+            </a>
+            <ul id="menu">
+              <li>
+                <a href="home.html">Home</a>
+              </li>
+              <li>
+                <a>Genre <i class="fa fa-plus"></i>
+                </a>
+                <ul class="genre">
+                  <li>
+                    <a title="Action movies" href="action.html">Action</a>
+                  </li>
+                  <li>
+                    <a title="Adventure movies" href="adventure.html">Adventure</a>
+                  </li>
+                  <li>
+                    <a title="Animation movies" href="animation.html">Animation</a>
+                  </li>
+                  <li>
+                    <a title="Biography movies" href="genre/biography.html">Biography</a>
+                  </li>
+                  <li>
+                    <a title="Costume movies" href="costume.html">Costume</a>
+                  </li>
+                  <li>
+                    <a title="Comedy movies" href="comedy.html">Comedy</a>
+                  </li>
+                  <li>
+                    <a title="Crime movies" href="crime.html">Crime</a>
+                  </li>
+                  <li>
+                    <a title="Documentary movies" href="documentary.html">Documentary</a>
+                  </li>
+                  <li>
+                    <a title="Drama movies" href="drama.html">Drama</a>
+                  </li>
+                  <li>
+                    <a title="Family movies" href="family.html">Family</a>
+                  </li>
+                  <li>
+                    <a title="Fantasy movies" href="fantasy.html">Fantasy</a>
+                  </li>
+                  <li>
+                    <a title="Game-Show movies" href="game-show.html">Game-Show</a>
+                  </li>
+                  <li>
+                    <a title="History movies" href="history.html">History</a>
+                  </li>
+                  <li>
+                    <a title="Horror movies" href="horror.html">Horror</a>
+                  </li>
+                  <li>
+                    <a title="Kungfu movies" href="kungfu.html">Kungfu</a>
+                  </li>
+                  <li>
+                    <a title="Music movies" href="music.html">Music</a>
+                  </li>
+                  <li>
+                    <a title="Mystery movies" href="mystery.html">Mystery</a>
+                  </li>
+                  <li>
+                    <a title="Reality-TV movies" href="reality-tv.html">Reality-TV</a>
+                  </li>
+                  <li>
+                    <a title="Romance movies" href="romance.html">Romance</a>
+                  </li>
+                  <li>
+                    <a title="Sci-Fi movies" href="sci-fi.html">Sci-Fi</a>
+                  </li>
+                  <li>
+                    <a title="Sport movies" href="sport.html">Sport</a>
+                  </li>
+                  <li>
+                    <a title="Thriller movies" href="thriller.html">Thriller</a>
+                  </li>
+                  <li>
+                    <a title="TV Show movies" href="tv-show.html">TV Show</a>
+                  </li>
+                  <li>
+                    <a title="War movies" href="war.html">War</a>
+                  </li>
+                  <li>
+                    <a title="Western movies" href="western.html">Western</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a>Country <i class="fa fa-plus"></i>
+                </a>
+                <ul class="country">
+                  <li>
+                    <a title="Argentina movies" href="/country/argentina.html">Argentina</a>
+                  </li>
+                  <li>
+                    <a title="Australia movies" href="/country/australia">Australia</a>
+                  </li>
+                  <li>
+                    <a title="Austria movies" href="/country/austria">Austria</a>
+                  </li>
+                  <li>
+                    <a title="Belgium movies" href="/country/belgium">Belgium</a>
+                  </li>
+                  <li>
+                    <a title="Brazil movies" href="/country/brazil">Brazil</a>
+                  </li>
+                  <li>
+                    <a title="Canada movies" href="/country/canada">Canada</a>
+                  </li>
+                  <li>
+                    <a title="China movies" href="/country/china">China</a>
+                  </li>
+                  <li>
+                    <a title="Czech Republic movies" href="/country/czech-republic">Czech Republic</a>
+                  </li>
+                  <li>
+                    <a title="Denmark movies" href="/country/denmark">Denmark</a>
+                  </li>
+                  <li>
+                    <a title="Finland movies" href="/country/finland">Finland</a>
+                  </li>
+                  <li>
+                    <a title="France movies" href="/country/france">France</a>
+                  </li>
+                  <li>
+                    <a title="Germany movies" href="/country/germany">Germany</a>
+                  </li>
+                  <li>
+                    <a title="Hong Kong movies" href="/country/hongkong">Hong Kong</a>
+                  </li>
+                  <li>
+                    <a title="Hungary movies" href="/country/hungary">Hungary</a>
+                  </li>
+                  <li>
+                    <a title="India movies" href="/country/india">India</a>
+                  </li>
+                  <li>
+                    <a title="International movies" href="/country/international">International</a>
+                  </li>
+                  <li>
+                    <a title="Ireland movies" href="/country/ireland">Ireland</a>
+                  </li>
+                  <li>
+                    <a title="Israel movies" href="/country/israel">Israel</a>
+                  </li>
+                  <li>
+                    <a title="Italy movies" href="/country/italy">Italy</a>
+                  </li>
+                  <li>
+                    <a title="Japan movies" href="/country/japan">Japan</a>
+                  </li>
+                  <li>
+                    <a title="Luxembourg movies" href="/country/luxembourg">Luxembourg</a>
+                  </li>
+                  <li>
+                    <a title="Mexico movies" href="/country/mexico">Mexico</a>
+                  </li>
+                  <li>
+                    <a title="Netherlands movies" href="/country/netherlands">Netherlands</a>
+                  </li>
+                  <li>
+                    <a title="New Zealand movies" href="/country/new-zealand">New Zealand</a>
+                  </li>
+                  <li>
+                    <a title="Norway movies" href="/country/norway">Norway</a>
+                  </li>
+                  <li>
+                    <a title="Philippines movies" href="/country/philippines">Philippines</a>
+                  </li>
+                  <li>
+                    <a title="Poland movies" href="/country/poland">Poland</a>
+                  </li>
+                  <li>
+                    <a title="Romania movies" href="/country/romania">Romania</a>
+                  </li>
+                  <li>
+                    <a title="Russia movies" href="/country/russia">Russia</a>
+                  </li>
+                  <li>
+                    <a title="South Africa movies" href="/country/south-africa">South Africa</a>
+                  </li>
+                  <li>
+                    <a title="South Korea movies" href="/country/south-korea">South Korea</a>
+                  </li>
+                  <li>
+                    <a title="Spain movies" href="/country/spain">Spain</a>
+                  </li>
+                  <li>
+                    <a title="Sweden movies" href="/country/sweden">Sweden</a>
+                  </li>
+                  <li>
+                    <a title="Switzerland movies" href="/country/switzerland">Switzerland</a>
+                  </li>
+                  <li>
+                    <a title="Thailand movies" href="/country/thailand">Thailand</a>
+                  </li>
+                  <li>
+                    <a title="Turkey movies" href="/country/turkey">Turkey</a>
+                  </li>
+                  <li>
+                    <a title="United Kingdom movies" href="/country/united-kingdom">United Kingdom</a>
+                  </li>
+                  <li>
+                    <a title="United States movies" href="/country/united-states">United States</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="movies.html" title="Movies">Movies</a>
+              </li>
+              <li>
+                <a href="tv-series.html" title="TV-Series">TV-Series</a>
+              </li>
+              <li>
+                <a href="top-imdb.html" title="Top IMDb">Top IMDb</a>
+              </li>
+            </ul>
+            <div id="user">
+              <div class="guest" data-toggle="modal" data-target="#md-login">
+                <i class="fa-solid fa-circle-user"></i>
+                <span>Login/ Register</span>
+              </div>
+            </div>
+            <div id="search-toggler">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <form id="search" autocomplete="off" action="./search">
+              <input type="text" name="keyword" placeholder="Enter your keywords..." autocomplete="off">
+              <button></button>
+              <div class="suggestions"></div>
+              <input type="hidden" name="vrf">
+            </form>
+          </div>
+    </header>
+
+    <section id="banner-ads">
+      <div class="container">
+        <div class="row">
+          <div class="banners">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+              <a href="/" title=""><img src="/images/banner-ads.jpg" alt=""></a>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+              <a href="/" title=""><img src="/images/banner-ads.jpg" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <div id="home-movies">
+        <div id="slider" class="swiper swiper-container">
+            <div class="swiper-wrapper" id="swiper-wrapper-43ab37494bb0bad5">
+                <!-- style="transition-duration: 0ms; transform: translate3d(-13321px, 0px, 0px);" -->
+                <div class="item swiper-slide lazyloaded swiper-slide-active col-lg-12 col-md-12 col-sm-12" role="group" aria-label="1 / 10">
+                  <!-- <div class="container"> -->
+                    <div class="info">
+                        <h3 class="title">Ant-Man and the Wasp: Quantumania</h3>
+                        <div class="meta"> <span class="quality">HD</span> <span class="imdb"> <i class="fa fa-star"></i> 6.20 </span> <span>124 min</span> <span> <a href="/genre/comedy" title="Comedy">Comedy</a> <a href="/genre/adventure" title="Adventure">Adventure</a> <a href="/genre/action" title="Action">Action</a> </span> </div>
+                        <div class="desc">Scott Lang and Hope Van Dyne are dragged into the Quantum Realm, along with Hope&amp;apos;s parents and Scott&amp;apos;s daughter Cassie. Together they must find a way to escape, but what secrets is Hope&amp;apos;s mother hiding? And who is the mysterious K...</div>
+                        <div class="actions"> 
+                            <a class="watchnow" href="watching.html"> 
+                                <i class="fa fa-play"></i> Watch now 
+                            </a> 
+                            <a class="bookmark"> Add to list</a> 
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="item swiper-slide lazyloaded swiper-slide-next col-lg-12 col-md-12 col-sm-12" role="group" aria-label="2 / 10">
+                  <!-- <div class="container"> -->
+                    <div class="info">
+                        <h3 class="title">Royalteen: Princess Margrethe</h3>
+                        <div class="meta"> <span class="quality">HD</span> <span class="imdb"> <i class="fa fa-star"></i> 4.50 </span> <span>98 min</span> <span> <a href="/genre/drama" title="Drama">Drama</a> <a href="/genre/romance" title="Romance">Romance</a> </span> </div>
+                        <div class="desc">In the wake of her prom scandal, Princess Margrethe longs for normalcy as she struggles to maintain her perfect facade while dealing with family drama.</div>
+                        <div class="actions"> 
+                          <a class="watchnow" href="watching.html"> <i class="fa fa-play"></i> Watch now </a> 
+                          <a class="bookmark" data-id="0ml39" data-action="add" data-add=""> 
+                            <i class='fa fa-heart' style='font-weight: 400'>
+                            </i> Add to list <i class='fa fa-times'></i> Remove from list 
+                          </a> 
+                        </div>
+                    </div>
+                  <!-- </div> -->
+                </div>
+                <div class="item swiper-slide lazyload swiper-slide-next col-lg-12 col-md-12 col-sm-12" role="group" aria-label="3 / 10">
+                  <!-- <div class="container"> -->
+                    <div class="info">
+                        <h3 class="title">The Super Mario Bros. Movie</h3>
+                        <div class="meta"> <span class="quality">CAM</span> <span class="imdb"> <i class="fa fa-star"></i> 7.30 </span> <span>92 min</span> <span> <a href="/genre/animation" title="Animation">Animation</a> <a href="/genre/comedy" title="Comedy">Comedy</a> <a href="/genre/adventure" title="Adventure">Adventure</a> </span> </div>
+                        <div class="desc">The story of The Super Mario Bros. on their journey through the Mushroom Kingdom.</div>
+                        <div class="actions"> <a class="watchnow" href="watching.html"> <i class="fa fa-play"></i> Watch now </a> <a class="bookmark" data-id="vqlpl" data-action="add" data-add=""> <i class='fa fa-heart' style='font-weight: 400'></i> Add to list <i class='fa fa-times'></i> Remove from list </a> </div>
+                    </div>
+                  <!-- </div> -->
+                </div>
+                <div class="item swiper-slide lazyload swiper-slide-next col-lg-12 col-md-12 col-sm-12" role="group" aria-label="4 / 10">
+                  <!-- <div class="container"> -->
+                    <div class="info">
+                        <h3 class="title">Evil Dead Rise</h3>
+                        <div class="meta"> <span class="quality">HD</span> <span class="imdb"> <i class="fa fa-star"></i> 6.90 </span> <span>96 min</span> <span> <a href="/genre/horror" title="Horror">Horror</a> </span> </div>
+                        <div class="desc">A twisted tale of two estranged sisters whose reunion is cut short by the rise of flesh-possessing demons, thrusting them into a primal battle for survival as they face the most nightmarish version of family imaginable.</div>
+                        <div class="actions"> <a class="watchnow" href="watching.html"> <i class="fa fa-play"></i> Watch now </a> <a class="bookmark" data-id="nkvok" data-action="add" data-add=""> <i class='fa fa-heart' style='font-weight: 400'></i> Add to list <i class='fa fa-times'></i> Remove from list </a> </div>
+                    </div>
+                  <!-- </div> -->
+                </div>
+                <div class="item swiper-slide lazyload swiper-slide-next col-lg-12 col-md-12 col-sm-12" role="group" aria-label="5 / 10">
+                  <!-- <div class="container"> -->
+                    <div class="info">
+                        <h3 class="title">Guardians of the Galaxy Vol. 3</h3>
+                        <div class="meta"> <span class="quality">CAM</span> <span class="imdb"> <i class="fa fa-star"></i> 8.30 </span> <span>150 min</span> <span> <a href="/genre/comedy" title="Comedy">Comedy</a> <a href="/genre/adventure" title="Adventure">Adventure</a> <a href="/genre/action" title="Action">Action</a> </span> </div>
+                        <div class="desc">Still reeling from the loss of Gamora, Peter Quill rallies his team to defend the universe and one of their own - a mission that could mean the end of the Guardians if not successful.</div>
+                        <div class="actions"> <a class="watchnow" href="watching.html"> <i class="fa fa-play"></i> Watch now </a> <a class="bookmark" data-id="yj4v1" data-action="add" data-add=""> <i class='fa fa-heart' style='font-weight: 400'></i> Add to list <i class='fa fa-times'></i> Remove from list </a> </div>
+                    </div>
+                  <!-- </div> -->
+                </div>
+                <div class="item swiper-slide lazyload swiper-slide-next col-lg-12 col-md-12 col-sm-12" role="group" aria-label="6 / 10">
+                  <!-- <div class="container"> -->
+                    <div class="info">
+                        <h3 class="title">Air</h3>
+                        <div class="meta"> <span class="quality">HD</span> <span class="imdb"> <i class="fa fa-star"></i> 7.60 </span> <span>111 min</span> <span> <a href="/genre/drama" title="Drama">Drama</a> <a href="/genre/sport" title="Sport">Sport</a> </span> </div>
+                        <div class="desc">Follows the history of shoe salesman Sonny Vaccaro, and how he led Nike in its pursuit of the greatest athlete in the history of basketball, Michael Jordan.</div>
+                        <div class="actions"> <a class="watchnow" href="watching.html"> <i class="fa fa-play"></i> Watch now </a> <a class="bookmark" data-id="41ox7" data-action="add" data-add=""> <i class='fa fa-heart' style='font-weight: 400'></i> Add to list <i class='fa fa-times'></i> Remove from list </a> </div>
+                    </div>
+                  <!-- </div> -->
+                </div>
+                <div class="item swiper-slide lazyload swiper-slide-next col-lg-12 col-md-12 col-sm-12" role="group" aria-label="7 / 10">
+                  <!-- <div class="container"> -->
+                    <div class="info">
+                        <h3 class="title">The Pope's Exorcist</h3>
+                        <div class="meta"> <span class="quality">HD</span> <span class="imdb"> <i class="fa fa-star"></i> 6.10 </span> <span>103 min</span> <span> <a href="/genre/thriller" title="Thriller">Thriller</a> <a href="/genre/horror" title="Horror">Horror</a> </span> </div>
+                        <div class="desc">Follow Gabriele Amorth, the Vatican&amp;apos;s leading exorcist, as he investigates the possession of a child and uncovers a conspiracy the Vatican has tried to keep secret.</div>
+                        <div class="actions"> <a class="watchnow" href="watching.html"> <i class="fa fa-play"></i> Watch now /a> <a class="bookmark" data-id="ro17n" data-action="add" data-add=""> <i class='fa fa-heart' style='font-weight: 400'></i> Add to list <i class='fa fa-times'></i> Remove from list </a> </div>
+                    </div>
+                  <!-- </div> -->
+                </div>
+                <div class="item swiper-slide lazyload swiper-slide-next col-lg-12 col-md-12 col-sm-12" role="group" aria-label="8 / 10">
+                  <!-- <div class="container"> -->
+                    <div class="info">
+                        <h3 class="title">Silo</h3>
+                        <div class="meta"> <span class="quality">HD</span> <span class="imdb"> <i class="fa fa-star"></i> 8.40 </span> <span>na min</span> <span> <a href="/genre/drama" title="Drama">Drama</a> </span> </div>
+                        <div class="desc">Men and women live in a giant silo underground with several regulations which they believe are in place to protect them from the toxic and ruined world on the surface where all the zombies live.</div>
+                        <div class="actions"> <a class="watchnow" href="watching.html"> <i class="fa fa-play"></i> Watch now </a> <a class="bookmark" data-id="wq2ol" data-action="add" data-add=""> <i class='fa fa-heart' style='font-weight: 400'></i> Add to list <i class='fa fa-times'></i> Remove from list </a> </div>
+                    </div>
+                  <!-- </div> -->
+                </div>
+                <div class="item swiper-slide lazyload swiper-slide-next col-lg-12 col-md-12 col-sm-12" role="group" aria-label="9 / 10">
+                  <!-- <div class="container"> -->
+                    <div class="info">
+                        <h3 class="title">The Covenant</h3>
+                        <div class="meta"> <span class="quality">HD</span> <span class="imdb"> <i class="fa fa-star"></i> 7.70 </span> <span>123 min</span> <span> <a href="/genre/thriller" title="Thriller">Thriller</a> <a href="/genre/action" title="Action">Action</a> </span> </div>
+                        <div class="desc">During the war in Afghanistan, a local interpreter risks his own life to carry an injured sergeant across miles of grueling terrain.</div>
+                        <div class="actions"> <a class="watchnow" href="watching.html"> <i class="fa fa-play"></i> Watch now </a> <a class="bookmark" data-id="olwp4" data-action="add" data-add=""> <i class='fa fa-heart' style='font-weight: 400'></i> Add to list <i class='fa fa-times'></i> Remove from list </a> </div>
+                    </div>
+                  <!-- </div> -->
+                </div>
+                <div class="item swiper-slide lazyload swiper-slide-next col-lg-12 col-md-12 col-sm-12" role="group" aria-label="10 / 10">
+                  <!-- <div class="container"> -->
+                    <div class="info">
+                      <h3 class="title">Dungeons &amp; Dragons: Honor Among Thieves</h3>
+                      <div class="meta"> <span class="quality">HD</span> <span class="imdb"> <i class="fa fa-star"></i> 7.40 </span> <span>134 min</span> <span> <a href="/genre/adventure" title="Adventure">Adventure</a> <a href="/genre/action" title="Action">Action</a> <a href="/genre/fantasy" title="Fantasy">Fantasy</a> </span> </div>
+                      <div class="desc">A charming thief and a band of unlikely adventurers embark on an epic quest to retrieve a lost relic, but things go dangerously awry when they run afoul of the wrong people.</div>
+                      <div class="actions"> <a class="watchnow" href="watching.html"> <i class="fa fa-play"></i> Watch now </a> <a class="bookmark" data-id="20634" data-action="add" data-add=""> <i class='fa fa-heart' style='font-weight: 400'></i> Add to list <i class='fa fa-times'></i> Remove from list </a> </div>
+                    </div>
+                  <!-- </div> -->
+                </div>
+            </div>
+            <div class="paging swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"> 
+              <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"></span> 
+              <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span> 
+              <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span> 
+              <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span> 
+              <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span> 
+              <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 6"></span> 
+              <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 7"></span> 
+              <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 8"></span> 
+              <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 9"></span> 
+              <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 10"></span> 
+            </div>
+        </div>
+    </div>
+
+    <section id="banner-ads">
+      <div class="container">
+        <div class="row">
+          <div class="banners">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+              <a href="/" title=""><img src="/images/banner-ads.jpg" alt=""></a>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+              <a href="/" title=""><img src="/images/banner-ads.jpg" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <div class="main-videos">
+      <div class="container">
+        <!-- PROMOTIONAL -->
+        <div class="promotional">
+          <!-- <div class="container-fluid"> -->
+            <div class="mb-5">
+              <h1 style="font-size: 1.2em; font-weight: 500;">Watch Movies Online Free</h1>
+              <div>
+                <div class="shorting">
+                  fmovies.to - Just a better place to <strong>watch movies online for free</strong>. It allows you to <strong>watch movies online</strong> in high quality for free. No registration is required. The content is updated daily with fast streaming servers, multi-language subtitles supported. Just open fmovies.to and watch your favorite movies, tv-shows. We have almost any movie, tv-shows you want to watch!<br>
+                  Please bookmark <label class="badge badge-secondary">fmovies.name</label> to update about fmovies domains.
+                </div>
+                <div>
+                  Please help us by sharing this site with your friends. Thanks!
+                </div>
+              </div>
+              <div class="share_toolbox" data-url="https://fakyiu.name" data-title="Fakyiu | Watch Movies Online Free on fakyiu.to" data-description="Watch online movies for free, watch movies free in high quality without registration. Just a better place for watching online movies for free. Fmovies.to, FFmovies.is, FFmovies.to" style="clear: both;">
+                <div id="share_box" class="at-resp-share-element at-style-responsive addthis-smartlayers addthis-animated at4-show" aria-labelledby="at-37b38529-bf00-4282-9926-cb3f3b85b372" role="region">
+                  <span id="at-37b38529-bf00-4282-9926-cb3f3b85b372" class="at4-visually-hidden">AddThis Sharing Buttons</span>
+                  <div class="at-share-btn-elements">
+                    <a role="button" tabindex="0" class="at-icon-wrapper at-share-btn at-svc-facebook" style="background-color: rgb(59, 89, 152); border-radius: 0px;"><span class="at4-visually-hidden">Share to Facebook</span> <span class="at-icon-wrapper" style="line-height: 16px; height: 16px; width: 16px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-facebook-1" class="at-icon at-icon-facebook" style="fill: rgb(255, 255, 255); width: 16px; height: 16px;">
+                    <title id="at-svg-facebook-1">Facebook</title>
+                    <g>
+                      <path d="M22 5.16c-.406-.054-1.806-.16-3.43-.16-3.4 0-5.733 1.825-5.733 5.17v2.882H9v3.913h3.837V27h4.604V16.965h3.823l.587-3.913h-4.41v-2.5c0-1.123.347-1.903 2.198-1.903H22V5.16z" fill-rule="evenodd"></path>
+                    </g></svg></span> <span class="at-label" style="font-size: 10.2px; line-height: 16px; height: 16px; color: rgb(255, 255, 255);">Facebook</span></a> <a role="button" tabindex="0" class="at-icon-wrapper at-share-btn at-svc-twitter" style="background-color: rgb(29, 161, 242); border-radius: 0px;"><span class="at4-visually-hidden">Share to Twitter</span> <span class="at-icon-wrapper" style="line-height: 16px; height: 16px; width: 16px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-twitter-2" class="at-icon at-icon-twitter" style="fill: rgb(255, 255, 255); width: 16px; height: 16px;">
+                    <title id="at-svg-twitter-2">Twitter</title>
+                    <g>
+                      <path d="M27.996 10.116c-.81.36-1.68.602-2.592.71a4.526 4.526 0 0 0 1.984-2.496 9.037 9.037 0 0 1-2.866 1.095 4.513 4.513 0 0 0-7.69 4.116 12.81 12.81 0 0 1-9.3-4.715 4.49 4.49 0 0 0-.612 2.27 4.51 4.51 0 0 0 2.008 3.755 4.495 4.495 0 0 1-2.044-.564v.057a4.515 4.515 0 0 0 3.62 4.425 4.52 4.52 0 0 1-2.04.077 4.517 4.517 0 0 0 4.217 3.134 9.055 9.055 0 0 1-5.604 1.93A9.18 9.18 0 0 1 6 23.85a12.773 12.773 0 0 0 6.918 2.027c8.3 0 12.84-6.876 12.84-12.84 0-.195-.005-.39-.014-.583a9.172 9.172 0 0 0 2.252-2.336" fill-rule="evenodd"></path>
+                    </g></svg></span> <span class="at-label" style="font-size: 10.2px; line-height: 16px; height: 16px; color: rgb(255, 255, 255);">Twitter</span></a> <a role="button" tabindex="0" class="at-icon-wrapper at-share-btn at-svc-email" style="background-color: rgb(132, 132, 132); border-radius: 0px;"><span class="at4-visually-hidden">Share to Email</span> <span class="at-icon-wrapper" style="line-height: 16px; height: 16px; width: 16px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-email-3" class="at-icon at-icon-email" style="fill: rgb(255, 255, 255); width: 16px; height: 16px;">
+                    <title id="at-svg-email-3">Email</title>
+                    <g>
+                      <g fill-rule="evenodd"></g>
+                      <path d="M27 22.757c0 1.24-.988 2.243-2.19 2.243H7.19C5.98 25 5 23.994 5 22.757V13.67c0-.556.39-.773.855-.496l8.78 5.238c.782.467 1.95.467 2.73 0l8.78-5.238c.472-.28.855-.063.855.495v9.087z"></path>
+                      <path d="M27 9.243C27 8.006 26.02 7 24.81 7H7.19C5.988 7 5 8.004 5 9.243v.465c0 .554.385 1.232.857 1.514l9.61 5.733c.267.16.8.16 1.067 0l9.61-5.733c.473-.283.856-.96.856-1.514v-.465z"></path>
+                    </g></svg></span> <span class="at-label" style="font-size: 10.2px; line-height: 16px; height: 16px; color: rgb(255, 255, 255);">Email</span></a> <a role="button" tabindex="0" class="at-icon-wrapper at-share-btn at-svc-pinterest_share" style="background-color: rgb(203, 32, 39); border-radius: 0px;"><span class="at4-visually-hidden">Share to Pinterest</span> <span class="at-icon-wrapper" style="line-height: 16px; height: 16px; width: 16px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-pinterest_share-4" class="at-icon at-icon-pinterest_share" style="fill: rgb(255, 255, 255); width: 16px; height: 16px;">
+                    <title id="at-svg-pinterest_share-4">Pinterest</title>
+                    <g>
+                      <path d="M7 13.252c0 1.81.772 4.45 2.895 5.045.074.014.178.04.252.04.49 0 .772-1.27.772-1.63 0-.428-1.174-1.34-1.174-3.123 0-3.705 3.028-6.33 6.947-6.33 3.37 0 5.863 1.782 5.863 5.058 0 2.446-1.054 7.035-4.468 7.035-1.232 0-2.286-.83-2.286-2.018 0-1.742 1.307-3.43 1.307-5.225 0-1.092-.67-1.977-1.916-1.977-1.692 0-2.732 1.77-2.732 3.165 0 .774.104 1.63.476 2.336-.683 2.736-2.08 6.814-2.08 9.633 0 .87.135 1.728.224 2.6l.134.137.207-.07c2.494-3.178 2.405-3.8 3.533-7.96.61 1.077 2.182 1.658 3.43 1.658 5.254 0 7.614-4.77 7.614-9.067C26 7.987 21.755 5 17.094 5 12.017 5 7 8.15 7 13.252z" fill-rule="evenodd"></path>
+                    </g></svg></span> <span class="at-label" style="font-size: 10.2px; line-height: 16px; height: 16px; color: rgb(255, 255, 255);">Pinterest</span></a> <a role="button" tabindex="0" class="at-icon-wrapper at-share-btn at-svc-whatsapp" style="background-color: rgb(77, 194, 71); border-radius: 0px;"><span class="at4-visually-hidden">Share to WhatsApp</span> <span class="at-icon-wrapper" style="line-height: 16px; height: 16px; width: 16px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-whatsapp-5" class="at-icon at-icon-whatsapp" style="fill: rgb(255, 255, 255); width: 16px; height: 16px;">
+                    <title id="at-svg-whatsapp-5">WhatsApp</title>
+                    <g>
+                      <path d="M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.78 1.23 1.82 2.506 3.41 4.554 4.34.616.287 2.035.888 2.722.888.817 0 2.15-.515 2.478-1.318.13-.33.244-.73.244-1.088 0-.058 0-.144-.03-.215-.1-.172-2.434-1.39-2.678-1.39zm-2.908 7.593c-1.747 0-3.48-.53-4.942-1.49L7.793 24.41l1.132-3.337a8.955 8.955 0 0 1-1.72-5.272c0-4.955 4.04-8.995 8.997-8.995S25.2 10.845 25.2 15.8c0 4.958-4.04 8.998-8.998 8.998zm0-19.798c-5.96 0-10.8 4.842-10.8 10.8 0 1.964.53 3.898 1.546 5.574L5 27.176l5.974-1.92a10.807 10.807 0 0 0 16.03-9.455c0-5.958-4.842-10.8-10.802-10.8z" fill-rule="evenodd"></path>
+                    </g></svg></span> <span class="at-label" style="font-size: 10.2px; line-height: 16px; height: 16px; color: rgb(255, 255, 255);">WhatsApp</span></a> <a role="button" tabindex="0" class="at-icon-wrapper at-share-btn at-svc-telegram" style="background-color: rgb(0, 136, 204); border-radius: 0px;"><span class="at4-visually-hidden">Share to Telegram</span> <span class="at-icon-wrapper" style="line-height: 16px; height: 16px; width: 16px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-telegram-6" class="at-icon at-icon-telegram" style="fill: rgb(255, 255, 255); width: 16px; height: 16px;">
+                    <title id="at-svg-telegram-6">Telegram</title>
+                    <g>
+                      <g fill-rule="evenodd"></g>
+                      <path d="M15.02 20.814l9.31-12.48L9.554 17.24l1.92 6.42c.225.63.114.88.767.88l.344-5.22 2.436 1.494z" opacity=".6"></path>
+                      <path d="M12.24 24.54c.504 0 .727-.234 1.008-.51l2.687-2.655-3.35-2.054-.344 5.22z" opacity=".3"></path>
+                      <path d="M12.583 19.322l8.12 6.095c.926.52 1.595.25 1.826-.874l3.304-15.825c.338-1.378-.517-2.003-1.403-1.594L5.024 14.727c-1.325.54-1.317 1.29-.24 1.625l4.98 1.58 11.53-7.39c.543-.336 1.043-.156.633.214"></path>
+                    </g></svg></span> <span class="at-label" style="font-size: 10.2px; line-height: 16px; height: 16px; color: rgb(255, 255, 255);">Telegram</span></a> <a role="button" tabindex="0" class="at-icon-wrapper at-share-btn at-svc-compact" style="background-color: rgb(255, 101, 80); border-radius: 0px;"><span class="at4-visually-hidden">Share to More</span> <span class="at-icon-wrapper" style="line-height: 16px; height: 16px; width: 16px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-addthis-7" class="at-icon at-icon-addthis" style="fill: rgb(255, 255, 255); width: 16px; height: 16px;">
+                    <title id="at-svg-addthis-7">AddThis</title>
+                    <g>
+                      <path d="M18 14V8h-4v6H8v4h6v6h4v-6h6v-4h-6z" fill-rule="evenodd"></path>
+                    </g></svg></span> <span class="at-label" style="font-size: 10.2px; line-height: 16px; height: 16px; color: rgb(255, 255, 255);">More</span> <span class="at4-share-count-container" style="font-size: 10.2px; line-height: 16px; color: rgb(255, 255, 255);">103K</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!-- </div> -->
+        </div>
+
+        <section id="banner-ads">
+          <div class="container">
+            <div class="row">
+              <div class="banners">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  <a href="/" title=""><img src="/images/banner-ads.jpg" alt=""></a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  <a href="/" title=""><img src="/images/banner-ads.jpg" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <!-- RECOMMENDED MOVIES -->
+        <div class="recommended-movies">
+          <!-- <div class="container-fluid"> -->
+            <div class="heading">
+              <h2>Recommended</h2>
+              <div class="tabs">
+                <span class="active" data-name="movies">Movies</span> <span data-name="shows">TV Shows</span> <span data-name="trending">Trending</span>
+              </div>
+            </div>
+            <div class="content tab-content" data-name="movies">
+              <div class="filmlist">
+                <div class="item" data-tip="17m4w?/cachee8c318">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="watching.html" title="Dead Shot" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/d/d2/d23cc633821f06c982ffdd76b53cf01b.jpg-w280" alt="d23cc633821f06c982ffdd76b53cf01b"></a> <span class="imdb">5.50</span>
+                  <h3><a class="title" title="Dead Shot" href="watching.html">Dead Shot</a></h3>
+                  <div class="meta">
+                    2023 92 min <i class="type">Movie</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="0ml43?/cacheeb6058">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="watching.html" title="Crater" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/9/97/97fd83ab00ec5243186f7c674ea422b7.jpg-w280" alt="97fd83ab00ec5243186f7c674ea422b7"></a> <span class="imdb">4.70</span>
+                  <h3><a class="title" title="Crater" href="watching.html">Crater</a></h3>
+                  <div class="meta">
+                    2023 105 min <i class="type">Movie</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="zkj62?/cache5196a5">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="watching.html" title="The Mother" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/d/d2/d22ccba42be7c875b78c1cf6ba0aa3fd.jpg-w280" alt="d22ccba42be7c875b78c1cf6ba0aa3fd"></a> <span class="imdb">5.50</span>
+                  <h3><a class="title" title="The Mother" href="watching.html">The Mother</a></h3>
+                  <div class="meta">
+                    2023 115 min <i class="type">Movie</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="0ml39?/cache2f2fdc">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="watching.html" title="Royalteen: Princess Margrethe" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/c/cf/cf1ac9cf7bd7ba25f6ccc52d3a8a79d7.jpg-w280" alt="cf1ac9cf7bd7ba25f6ccc52d3a8a79d7"></a> <span class="imdb">4.50</span>
+                  <h3><a class="title" title="Royalteen: Princess Margrethe" href="watching.html">Royalteen: Princess Margrethe</a></h3>
+                  <div class="meta">
+                    2023 98 min <i class="type">Movie</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="nkvok?/cache2ae4aa">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="watching.html" title="Evil Dead Rise" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/a/a6/a61e1cf78adc26d2978a760884b8b07d.jpg-w280" alt="a61e1cf78adc26d2978a760884b8b07d"></a> <span class="imdb">6.90</span>
+                  <h3><a class="title" title="Evil Dead Rise" href="watching.html">Evil Dead Rise</a></h3>
+                  <div class="meta">
+                    2023 96 min <i class="type">Movie</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="olwp4?/cache10d1fa">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="watching.html" title="The Covenant" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/3/3f/3f91fd4aecac8beea4e10a565f805576.jpg-w280" alt="3f91fd4aecac8beea4e10a565f805576"></a> <span class="imdb">7.70</span>
+                  <h3><a class="title" title="The Covenant" href="watching.html">The Covenant</a></h3>
+                  <div class="meta">
+                    2023 123 min <i class="type">Movie</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="lxo1m?/cached7d1d9">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="watching.html" title="Sweetwater" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/6/6b/6b2db1de7e69cfc051ba385db00db2db.jpg-w280" alt="6b2db1de7e69cfc051ba385db00db2db"></a> <span class="imdb">5.60</span>
+                  <h3><a class="title" title="Sweetwater" href="watching.html">Sweetwater</a></h3>
+                  <div class="meta">
+                    2023 118 min <i class="type">Movie</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="20n00?/cachecbfb4c">
+                  <div class="icons">
+                    <div class="quality">
+                      CAM
+                    </div>
+                  </div><a href="watching.html" title="Love Again" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/9/91/9116ceac5fe5dc9a193e2b958618fe75.jpg-w280" alt="9116ceac5fe5dc9a193e2b958618fe75"></a> <span class="imdb">5.90</span>
+                  <h3><a class="title" title="Love Again" href="watching.html">Love Again</a></h3>
+                  <div class="meta">
+                    2023 104 min <i class="type">Movie</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="yj4v1?/cache0266e9">
+                  <div class="icons">
+                    <div class="quality">
+                      CAM
+                    </div>
+                  </div><a href="watching.html" title="Guardians of the Galaxy Vol. 3" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/0/01/01bbbf15781ae8307743faf18078da81.jpg-w280" alt="01bbbf15781ae8307743faf18078da81"></a> <span class="imdb">8.30</span>
+                  <h3><a class="title" title="Guardians of the Galaxy Vol. 3" href="watching.html">Guardians of the Galaxy Vol. 3</a></h3>
+                  <div class="meta">
+                    2023 150 min <i class="type">Movie</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="30nwr?/cache14b2f2">
+                  <div class="icons">
+                    <div class="quality">
+                      CAM
+                    </div>
+                  </div><a href="watching.html" title="Sisu" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/b/bd/bd7f35052033f9d10583a05934521969.jpg-w280" alt="bd7f35052033f9d10583a05934521969"></a> <span class="imdb">7.30</span>
+                  <h3><a class="title" title="Sisu" href="watching.html">Sisu</a></h3>
+                  <div class="meta">
+                    2022 91 min <i class="type">Movie</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="82von?/cachea52873">
+                  <div class="icons">
+                    <div class="quality">
+                      CAM
+                    </div>
+                  </div><a href="watching.html" title="The Black Demon" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/2/24/24a6bd578f63c06c16cead5da0d9bb16.jpg-w280" alt="24a6bd578f63c06c16cead5da0d9bb16"></a> <span class="imdb">4.10</span>
+                  <h3><a class="title" title="The Black Demon" href="watching.html">The Black Demon</a></h3>
+                  <div class="meta">
+                    2023 100 min <i class="type">Movie</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="mjrnv?/cachef0e101">
+                  <div class="icons">
+                    <div class="quality">
+                      CAM
+                    </div>
+                  </div><a href="watching.html" title="To Catch a Killer" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/7/79/79f86f1bfe0a00ea36844f45b241a2c8.jpg-w280" alt="79f86f1bfe0a00ea36844f45b241a2c8"></a> <span class="imdb">7.00</span>
+                  <h3><a class="title" title="To Catch a Killer" href="watching.html">To Catch a Killer</a></h3>
+                  <div class="meta">
+                    2023 119 min <i class="type">Movie</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="x1n7q?/cache98519f">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="watching.html" title="A Thousand and One" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/9/94/948f4e3c2534583717e803a370883fa4.jpg-w280" alt="948f4e3c2534583717e803a370883fa4"></a> <span class="imdb">7.10</span>
+                  <h3><a class="title" title="A Thousand and One" href="watching.html">A Thousand and One</a></h3>
+                  <div class="meta">
+                    2023 117 min <i class="type">Movie</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="x1708?/cache02fb94">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="watching.html" title="Ghosted" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/5/5b/5bbe4cc42c07fd735261421dab4860b8.jpg-w280" alt="5bbe4cc42c07fd735261421dab4860b8"></a> <span class="imdb">5.80</span>
+                  <h3><a class="title" title="Ghosted" href="watching.html">Ghosted</a></h3>
+                  <div class="meta">
+                    2023 116 min <i class="type">Movie</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="x1n08?/cache7e9f25">
+                  <div class="icons">
+                    <div class="quality">
+                      TS
+                    </div>
+                  </div><a href="watching.html" title="John Wick: Chapter 4" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/9/9f/9f2b3516bf3b43a5eec8d7ece7f2fd42.jpg-w280" alt="9f2b3516bf3b43a5eec8d7ece7f2fd42"></a> <span class="imdb">8.20</span>
+                  <h3><a class="title" title="John Wick: Chapter 4" href="watching.html">John Wick: Chapter 4</a></h3>
+                  <div class="meta">
+                    2023 169 min <i class="type">Movie</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="wqvz6?/cache76ae02">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="watching.html" title="Ant-Man and the Wasp: Quantumania" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/a/ac/ac157eea8c32a389c14069796a106105.jpg-w280" alt="ac157eea8c32a389c14069796a106105"></a> <span class="imdb">6.20</span>
+                  <h3><a class="title" title="Ant-Man and the Wasp: Quantumania" href="watching.html">Ant-Man and the Wasp: Quantumania</a></h3>
+                  <div class="meta">
+                    2023 124 min <i class="type">Movie</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="5wpvm?/cache22ae75">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="watching.html" title="Renfield" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/0/0d/0dae29436d8afb99cdf220079743b962.jpg-w280" alt="0dae29436d8afb99cdf220079743b962"></a> <span class="imdb">6.40</span>
+                  <h3><a class="title" title="Renfield" href="watching.html">Renfield</a></h3>
+                  <div class="meta">
+                    2023 93 min <i class="type">Movie</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="41ox7?/cachedecb0d">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="watching.html" title="Air" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/2/2e/2e4a6da0bcd98b18c23c8d89e3394de9.jpg-w280" alt="2e4a6da0bcd98b18c23c8d89e3394de9"></a> <span class="imdb">7.60</span>
+                  <h3><a class="title" title="Air" href="watching.html">Air</a></h3>
+                  <div class="meta">
+                    2023 111 min <i class="type">Movie</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="9jwyn?/cache8053c5">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="watching.html" title="The Last Kingdom: Seven Kings Must Die" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/1/1b/1b2b899e66bc3bc31369513e685bd61a.jpg-w280" alt="1b2b899e66bc3bc31369513e685bd61a"></a> <span class="imdb">6.90</span>
+                  <h3><a class="title" title="The Last Kingdom: Seven Kings Must Die" href="watching.html">The Last Kingdom: Seven Kings Must Die</a></h3>
+                  <div class="meta">
+                    2023 111 min <i class="type">Movie</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="30nxy?/cache87ae51">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="watching.html" title="Mafia Mamma" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/2/2f/2f01ef5c2419307c28448c95d5ace1b3.jpg-w280" alt="2f01ef5c2419307c28448c95d5ace1b3"></a> <span class="imdb">5.30</span>
+                  <h3><a class="title" title="Mafia Mamma" href="watching.html">Mafia Mamma</a></h3>
+                  <div class="meta">
+                    2023 101 min <i class="type">Movie</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="pmxpx?/cachef681db">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="watching.html" title="A Good Person" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/5/50/50539cc8cbb92653543ee3d833c9bf3b.jpg-w280" alt="50539cc8cbb92653543ee3d833c9bf3b"></a> <span class="imdb">7.00</span>
+                  <h3><a class="title" title="A Good Person" href="watching.html">A Good Person</a></h3>
+                  <div class="meta">
+                    2023 128 min <i class="type">Movie</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="vqlpl?/cache05622e">
+                  <div class="icons">
+                    <div class="quality">
+                      CAM
+                    </div>
+                  </div><a href="watching.html" title="The Super Mario Bros. Movie" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/a/a6/a626a19dca19799450594250720ebf38.jpg-w280" alt="a626a19dca19799450594250720ebf38"></a> <span class="imdb">7.30</span>
+                  <h3><a class="title" title="The Super Mario Bros. Movie" href="watching.html">The Super Mario Bros. Movie</a></h3>
+                  <div class="meta">
+                    2023 92 min <i class="type">Movie</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="wqm8o?/cache431ba6">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="watching.html" title="Shazam! Fury of the Gods" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/b/bb/bba502d6ca211528284128fb5703febb.jpg-w280" alt="bba502d6ca211528284128fb5703febb"></a> <span class="imdb">6.10</span>
+                  <h3><a class="title" title="Shazam! Fury of the Gods" href="watching.html">Shazam! Fury of the Gods</a></h3>
+                  <div class="meta">
+                    2023 130 min <i class="type">Movie</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="ro17n?/cache7827cc">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="watching.html" title="The Pope's Exorcist" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/1/1c/1c6ce442f90c957c1aac2fa4a80d2138.jpg-w280" alt="1c6ce442f90c957c1aac2fa4a80d2138"></a> <span class="imdb">6.10</span>
+                  <h3><a class="title" title="The Pope's Exorcist" href="watching.html">The Pope's Exorcist</a></h3>
+                  <div class="meta">
+                    2023 103 min <i class="type">Movie</i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content tab-content" data-name="shows" style="display: none;">
+              <div class="filmlist">
+                <div class="item" data-tip="vq1x7?/cache369cd2">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="/series/black-knight-vq1x7" title="Black Knight" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/3/3e/3e46b674ded084e17f339a6625b477dc.jpg-w280" alt="3e46b674ded084e17f339a6625b477dc"></a> <span class="imdb">6.20</span>
+                  <h3><a class="title" title="Black Knight" href="/series/black-knight-vq1x7">Black Knight</a></h3>
+                  <div class="meta">
+                    SS 1 EP 6 <i class="type">TV</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="qzwpn?/cache3eb0d1">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="/series/city-on-fire-qzwpn" title="City on Fire" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/c/ca/ca2d69e26a8738f133fd3b78b80425a5.jpg-w280" alt="ca2d69e26a8738f133fd3b78b80425a5"></a> <span class="imdb">6.40</span>
+                  <h3><a class="title" title="City on Fire" href="/series/city-on-fire-qzwpn">City on Fire</a></h3>
+                  <div class="meta">
+                    SS 1 EP 3 <i class="type">TV</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="wq2ol?/cachea03920">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="/series/silo-wq2ol" title="Silo" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/a/a5/a50f6f4b8203d9388060d72f0ed9b89b.jpg-w280" alt="a50f6f4b8203d9388060d72f0ed9b89b"></a> <span class="imdb">8.40</span>
+                  <h3><a class="title" title="Silo" href="/series/silo-wq2ol">Silo</a></h3>
+                  <div class="meta">
+                    SS 1 EP 3 <i class="type">TV</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="roxln?/cache917d43">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="/series/queen-charlotte-a-bridgerton-story-roxln" title="Queen Charlotte: A Bridgerton Story" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/0/0e/0e9f2b3538d559b2a6693dbb25e264ae.jpg-w280" alt="0e9f2b3538d559b2a6693dbb25e264ae"></a> <span class="imdb">7.30</span>
+                  <h3><a class="title" title="Queen Charlotte: A Bridgerton Story" href="/series/queen-charlotte-a-bridgerton-story-roxln">Queen Charlotte: A Bridgerton Story</a></h3>
+                  <div class="meta">
+                    SS 1 EP 6 <i class="type">TV</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="pmvrq?/cachec3633c">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="/series/the-other-two-pmvrq" title="The Other Two" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/4/42/4294ffece61286828e98128f9c934dfd.jpg-w280" alt="4294ffece61286828e98128f9c934dfd"></a> <span class="imdb">7.80</span>
+                  <h3><a class="title" title="The Other Two" href="/series/the-other-two-pmvrq">The Other Two</a></h3>
+                  <div class="meta">
+                    SS 3 EP 3 <i class="type">TV</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="vq3kl?/cache084798">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="/series/white-house-plumbers-vq3kl" title="White House Plumbers" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/0/01/01588d8db4299699f6e28aafbaaa56c6.jpg-w280" alt="01588d8db4299699f6e28aafbaaa56c6"></a> <span class="imdb">6.70</span>
+                  <h3><a class="title" title="White House Plumbers" href="/series/white-house-plumbers-vq3kl">White House Plumbers</a></h3>
+                  <div class="meta">
+                    SS 1 EP 2 <i class="type">TV</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="pmx06?/cache3bb0dd">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="/series/fatal-attraction-pmx06" title="Fatal Attraction" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/b/bc/bcf57e7023a0c412219cd7c9a8c75093.jpg-w280" alt="bcf57e7023a0c412219cd7c9a8c75093"></a> <span class="imdb">6.00</span>
+                  <h3><a class="title" title="Fatal Attraction" href="/series/fatal-attraction-pmx06">Fatal Attraction</a></h3>
+                  <div class="meta">
+                    SS 1 EP 4 <i class="type">TV</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="olww8?/cache92e1c3">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="/series/citadel-olww8" title="Citadel" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/1/18/1801df18711537c14f8b1aa164984055.jpg-w280" alt="1801df18711537c14f8b1aa164984055"></a> <span class="imdb">6.30</span>
+                  <h3><a class="title" title="Citadel" href="/series/citadel-olww8">Citadel</a></h3>
+                  <div class="meta">
+                    SS 1 EP 4 <i class="type">TV</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="qzpzn?/cachea17a95">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="/series/greys-anatomy-qzpzn" title="Grey's Anatomy" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/0/0b/0b89bb4345789093daf982e23467516e.jpg-w280" alt="0b89bb4345789093daf982e23467516e"></a> <span class="imdb">7.60</span>
+                  <h3><a class="title" title="Grey's Anatomy" href="/series/greys-anatomy-qzpzn">Grey's Anatomy</a></h3>
+                  <div class="meta">
+                    SS 19 EP 18 <i class="type">TV</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="30552?/cacheec79f5">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="/series/the-mandalorian-30552" title="The Mandalorian" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/d/d8/d8dc979c6502908cd290a63a792a2751.jpg-w280" alt="d8dc979c6502908cd290a63a792a2751"></a> <span class="imdb">8.70</span>
+                  <h3><a class="title" title="The Mandalorian" href="/series/the-mandalorian-30552">The Mandalorian</a></h3>
+                  <div class="meta">
+                    SS 3 EP 8 <i class="type">TV</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="30648?/cache9146fe">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="/series/yellowjackets-30648" title="Yellowjackets" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/0/0f/0f46955bc06da610df4ab4e92ee94568.jpg-w280" alt="0f46955bc06da610df4ab4e92ee94568"></a> <span class="imdb">7.90</span>
+                  <h3><a class="title" title="Yellowjackets" href="/series/yellowjackets-30648">Yellowjackets</a></h3>
+                  <div class="meta">
+                    SS 2 EP 7 <i class="type">TV</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="707k8?/cache54358d">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="/series/power-book-ii-ghost-707k8" title="Power Book II: Ghost" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/8/8f/8f6c4ef1362f570aac8effd19b04954c.jpg-w280" alt="8f6c4ef1362f570aac8effd19b04954c"></a> <span class="imdb">7.40</span>
+                  <h3><a class="title" title="Power Book II: Ghost" href="/series/power-book-ii-ghost-707k8">Power Book II: Ghost</a></h3>
+                  <div class="meta">
+                    SS 3 EP 8 <i class="type">TV</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="3069y?/cache7b4dd1">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="/series/gotham-knights-3069y" title="Gotham Knights" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/1/19/192700f4807ea7b3de5d7e88607da196.jpg-w280" alt="192700f4807ea7b3de5d7e88607da196"></a> <span class="imdb">4.50</span>
+                  <h3><a class="title" title="Gotham Knights" href="/series/gotham-knights-3069y">Gotham Knights</a></h3>
+                  <div class="meta">
+                    SS 1 EP 8 <i class="type">TV</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="206r2?/cache7cf720">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="/series/beef-206r2" title="Beef" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/1/14/14e28ed81674e53ad2c6e7241e906282.jpg-w280" alt="14e28ed81674e53ad2c6e7241e906282"></a> <span class="imdb">8.20</span>
+                  <h3><a class="title" title="Beef" href="/series/beef-206r2">Beef</a></h3>
+                  <div class="meta">
+                    SS 1 EP 10 <i class="type">TV</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="x1nnq?/cachee4398a">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="/series/the-power-x1nnq" title="The Power" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/4/42/42d792bfcc23a2f1194d28d30b2fc4db.jpg-w280" alt="42d792bfcc23a2f1194d28d30b2fc4db"></a> <span class="imdb">6.20</span>
+                  <h3><a class="title" title="The Power" href="/series/the-power-x1nnq">The Power</a></h3>
+                  <div class="meta">
+                    SS 1 EP 9 <i class="type">TV</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="416w7?/cache564d5c">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="/series/ted-lasso-416w7" title="Ted Lasso" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/1/15/156b93dab7789c9f206c0e123070016d.jpg-w280" alt="156b93dab7789c9f206c0e123070016d"></a> <span class="imdb">8.80</span>
+                  <h3><a class="title" title="Ted Lasso" href="/series/ted-lasso-416w7">Ted Lasso</a></h3>
+                  <div class="meta">
+                    SS 3 EP 9 <i class="type">TV</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="178zv?/cacheb843d7">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="/series/superman-lois-178zv" title="Superman &amp; Lois" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/a/ad/ad2d20e8b033e9c25293e02395041d49.jpg-w280" alt="ad2d20e8b033e9c25293e02395041d49"></a> <span class="imdb">7.80</span>
+                  <h3><a class="title" title="Superman &amp; Lois" href="/series/superman-lois-178zv">Superman & Lois</a></h3>
+                  <div class="meta">
+                    SS 3 EP 8 <i class="type">TV</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="zkp43?/cachee9c082">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="/series/succession-zkp43" title="Succession" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/5/51/51a4b52bacd524f3808600a7b0fa4773.jpg-w280" alt="51a4b52bacd524f3808600a7b0fa4773"></a> <span class="imdb">8.80</span>
+                  <h3><a class="title" title="Succession" href="/series/succession-zkp43">Succession</a></h3>
+                  <div class="meta">
+                    SS 4 EP 7 <i class="type">TV</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="mjw8x?/cache24a6b7">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="/series/the-night-agent-mjw8x" title="The Night Agent" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/3/37/372ba8dd3b5d76ce8adc2a0c5f1bb370.jpg-w280" alt="372ba8dd3b5d76ce8adc2a0c5f1bb370"></a> <span class="imdb">7.50</span>
+                  <h3><a class="title" title="The Night Agent" href="/series/the-night-agent-mjw8x">The Night Agent</a></h3>
+                  <div class="meta">
+                    SS 1 EP 10 <i class="type">TV</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="416x7?/cacheba10b4">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="/series/shadow-and-bone-416x7" title="Shadow and Bone" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/6/65/655186d298aa9c065959c7e8f738bd35.jpg-w280" alt="655186d298aa9c065959c7e8f738bd35"></a> <span class="imdb">7.60</span>
+                  <h3><a class="title" title="Shadow and Bone" href="/series/shadow-and-bone-416x7">Shadow and Bone</a></h3>
+                  <div class="meta">
+                    SS 2 EP 8 <i class="type">TV</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="x1qo8?/cache0f13b2">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="/series/the-last-of-us-x1qo8" title="The Last of Us" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w280" alt="6f930d94934dee2d18bacc38497c52c7"></a> <span class="imdb">8.80</span>
+                  <h3><a class="title" title="The Last of Us" href="/series/the-last-of-us-x1qo8">The Last of Us</a></h3>
+                  <div class="meta">
+                    SS 1 EP 9 <i class="type">TV</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="zky43?/cache03df57">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="/series/snowfall-zky43" title="Snowfall" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/8/89/89dcd279637a17dea228c135649d0da1.jpg-w280" alt="89dcd279637a17dea228c135649d0da1"></a> <span class="imdb">8.30</span>
+                  <h3><a class="title" title="Snowfall" href="/series/snowfall-zky43">Snowfall</a></h3>
+                  <div class="meta">
+                    SS 6 EP 10 <i class="type">TV</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="j20oy?/cache41a856">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="/series/young-sheldon-j20oy" title="Young Sheldon" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/b/b0/b0706586ca43ec49da490cb94d8e1661.jpg-w280" alt="b0706586ca43ec49da490cb94d8e1661"></a> <span class="imdb">7.60</span>
+                  <h3><a class="title" title="Young Sheldon" href="/series/young-sheldon-j20oy">Young Sheldon</a></h3>
+                  <div class="meta">
+                    SS 6 EP 20 <i class="type">TV</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="olnjz?/cache41bbbf">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="/series/the-good-doctor-olnjz" title="The Good Doctor" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/a/ac/ac824b7a3324699472a281e90ac0f274.jpg-w280" alt="ac824b7a3324699472a281e90ac0f274"></a> <span class="imdb">8.00</span>
+                  <h3><a class="title" title="The Good Doctor" href="/series/the-good-doctor-olnjz">The Good Doctor</a></h3>
+                  <div class="meta">
+                    SS 6 EP 22 <i class="type">TV</i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content tab-content" data-name="trending" style="display: none;">
+              <div class="filmlist">
+                <div class="item" data-tip="nkvok?/cache2ae4aa">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="/movie/evil-dead-rise-nkvok" title="Evil Dead Rise" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/a/a6/a61e1cf78adc26d2978a760884b8b07d.jpg-w280" alt="a61e1cf78adc26d2978a760884b8b07d"></a> <span class="imdb">6.90</span>
+                  <h3><a class="title" title="Evil Dead Rise" href="/movie/evil-dead-rise-nkvok">Evil Dead Rise</a></h3>
+                  <div class="meta">
+                    2023 96 min <i class="type">Movie</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="j20oy?/cache41a856">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="/series/young-sheldon-j20oy" title="Young Sheldon" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/b/b0/b0706586ca43ec49da490cb94d8e1661.jpg-w280" alt="b0706586ca43ec49da490cb94d8e1661"></a> <span class="imdb">7.60</span>
+                  <h3><a class="title" title="Young Sheldon" href="/series/young-sheldon-j20oy">Young Sheldon</a></h3>
+                  <div class="meta">
+                    SS 6 EP 20 <i class="type">TV</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="zkj62?/cache5196a5">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="/movie/the-mother-zkj62" title="The Mother" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/d/d2/d22ccba42be7c875b78c1cf6ba0aa3fd.jpg-w280" alt="d22ccba42be7c875b78c1cf6ba0aa3fd"></a> <span class="imdb">5.50</span>
+                  <h3><a class="title" title="The Mother" href="/movie/the-mother-zkj62">The Mother</a></h3>
+                  <div class="meta">
+                    2023 115 min <i class="type">Movie</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="707k8?/cache54358d">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="/series/power-book-ii-ghost-707k8" title="Power Book II: Ghost" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/8/8f/8f6c4ef1362f570aac8effd19b04954c.jpg-w280" alt="8f6c4ef1362f570aac8effd19b04954c"></a> <span class="imdb">7.40</span>
+                  <h3><a class="title" title="Power Book II: Ghost" href="/series/power-book-ii-ghost-707k8">Power Book II: Ghost</a></h3>
+                  <div class="meta">
+                    SS 3 EP 8 <i class="type">TV</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="olwp4?/cache10d1fa">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="/movie/the-covenant-olwp4" title="The Covenant" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/3/3f/3f91fd4aecac8beea4e10a565f805576.jpg-w280" alt="3f91fd4aecac8beea4e10a565f805576"></a> <span class="imdb">7.70</span>
+                  <h3><a class="title" title="The Covenant" href="/movie/the-covenant-olwp4">The Covenant</a></h3>
+                  <div class="meta">
+                    2023 123 min <i class="type">Movie</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="70o6y?/cachec8e42e">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="/series/the-rookie-70o6y" title="The Rookie" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/9/9a/9a4ed51f11b98ff61e794f9092cbf766.jpg-w280" alt="9a4ed51f11b98ff61e794f9092cbf766"></a> <span class="imdb">8.00</span>
+                  <h3><a class="title" title="The Rookie" href="/series/the-rookie-70o6y">The Rookie</a></h3>
+                  <div class="meta">
+                    SS 5 EP 22 <i class="type">TV</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="yj4v1?/cache0266e9">
+                  <div class="icons">
+                    <div class="quality">
+                      CAM
+                    </div>
+                  </div><a href="/movie/guardians-of-the-galaxy-vol-3-yj4v1" title="Guardians of the Galaxy Vol. 3" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/0/01/01bbbf15781ae8307743faf18078da81.jpg-w280" alt="01bbbf15781ae8307743faf18078da81"></a> <span class="imdb">8.30</span>
+                  <h3><a class="title" title="Guardians of the Galaxy Vol. 3" href="/movie/guardians-of-the-galaxy-vol-3-yj4v1">Guardians of the Galaxy Vol. 3</a></h3>
+                  <div class="meta">
+                    2023 150 min <i class="type">Movie</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="qzy9n?/cache604c65">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="/series/from-qzy9n" title="From" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/d/d5/d58832fbc808e2d5dcb740322ab46517.jpg-w280" alt="d58832fbc808e2d5dcb740322ab46517"></a> <span class="imdb">7.70</span>
+                  <h3><a class="title" title="From" href="/series/from-qzy9n">From</a></h3>
+                  <div class="meta">
+                    SS 2 EP 3 <i class="type">TV</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="roxln?/cache917d43">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="/series/queen-charlotte-a-bridgerton-story-roxln" title="Queen Charlotte: A Bridgerton Story" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/0/0e/0e9f2b3538d559b2a6693dbb25e264ae.jpg-w280" alt="0e9f2b3538d559b2a6693dbb25e264ae"></a> <span class="imdb">7.30</span>
+                  <h3><a class="title" title="Queen Charlotte: A Bridgerton Story" href="/series/queen-charlotte-a-bridgerton-story-roxln">Queen Charlotte: A Bridgerton Story</a></h3>
+                  <div class="meta">
+                    SS 1 EP 6 <i class="type">TV</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="x1n08?/cache7e9f25">
+                  <div class="icons">
+                    <div class="quality">
+                      TS
+                    </div>
+                  </div><a href="/movie/john-wick-chapter-4-x1n08" title="John Wick: Chapter 4" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/9/9f/9f2b3516bf3b43a5eec8d7ece7f2fd42.jpg-w280" alt="9f2b3516bf3b43a5eec8d7ece7f2fd42"></a> <span class="imdb">8.20</span>
+                  <h3><a class="title" title="John Wick: Chapter 4" href="/movie/john-wick-chapter-4-x1n08">John Wick: Chapter 4</a></h3>
+                  <div class="meta">
+                    2023 169 min <i class="type">Movie</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="416w7?/cache564d5c">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="/series/ted-lasso-416w7" title="Ted Lasso" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/1/15/156b93dab7789c9f206c0e123070016d.jpg-w280" alt="156b93dab7789c9f206c0e123070016d"></a> <span class="imdb">8.80</span>
+                  <h3><a class="title" title="Ted Lasso" href="/series/ted-lasso-416w7">Ted Lasso</a></h3>
+                  <div class="meta">
+                    SS 3 EP 9 <i class="type">TV</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="0ml43?/cacheeb6058">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="/movie/crater-0ml43" title="Crater" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/9/97/97fd83ab00ec5243186f7c674ea422b7.jpg-w280" alt="97fd83ab00ec5243186f7c674ea422b7"></a> <span class="imdb">4.70</span>
+                  <h3><a class="title" title="Crater" href="/movie/crater-0ml43">Crater</a></h3>
+                  <div class="meta">
+                    2023 105 min <i class="type">Movie</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="ro17n?/cache7827cc">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="/movie/the-popes-exorcist-ro17n" title="The Pope's Exorcist" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/1/1c/1c6ce442f90c957c1aac2fa4a80d2138.jpg-w280" alt="1c6ce442f90c957c1aac2fa4a80d2138"></a> <span class="imdb">6.10</span>
+                  <h3><a class="title" title="The Pope's Exorcist" href="/movie/the-popes-exorcist-ro17n">The Pope's Exorcist</a></h3>
+                  <div class="meta">
+                    2023 103 min <i class="type">Movie</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="wq2ol?/cachea03920">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="/series/silo-wq2ol" title="Silo" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/a/a5/a50f6f4b8203d9388060d72f0ed9b89b.jpg-w280" alt="a50f6f4b8203d9388060d72f0ed9b89b"></a> <span class="imdb">8.40</span>
+                  <h3><a class="title" title="Silo" href="/series/silo-wq2ol">Silo</a></h3>
+                  <div class="meta">
+                    SS 1 EP 3 <i class="type">TV</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="41ox7?/cachedecb0d">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="/movie/air-41ox7" title="Air" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/2/2e/2e4a6da0bcd98b18c23c8d89e3394de9.jpg-w280" alt="2e4a6da0bcd98b18c23c8d89e3394de9"></a> <span class="imdb">7.60</span>
+                  <h3><a class="title" title="Air" href="/movie/air-41ox7">Air</a></h3>
+                  <div class="meta">
+                    2023 111 min <i class="type">Movie</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="qzpzn?/cachea17a95">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="/series/greys-anatomy-qzpzn" title="Grey's Anatomy" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/0/0b/0b89bb4345789093daf982e23467516e.jpg-w280" alt="0b89bb4345789093daf982e23467516e"></a> <span class="imdb">7.60</span>
+                  <h3><a class="title" title="Grey's Anatomy" href="/series/greys-anatomy-qzpzn">Grey's Anatomy</a></h3>
+                  <div class="meta">
+                    SS 19 EP 18 <i class="type">TV</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="20634?/cachedb82b1">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="/movie/dungeons-dragons-honor-among-thieves-20634" title="Dungeons &amp; Dragons: Honor Among Thieves" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/3/38/387b5b4a3619bfb0a3bff43b52387570.jpg-w280" alt="387b5b4a3619bfb0a3bff43b52387570"></a> <span class="imdb">7.40</span>
+                  <h3><a class="title" title="Dungeons &amp; Dragons: Honor Among Thieves" href="/movie/dungeons-dragons-honor-among-thieves-20634">Dungeons & Dragons: Honor Among Thieves</a></h3>
+                  <div class="meta">
+                    2023 134 min <i class="type">Movie</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="vqlpl?/cache05622e">
+                  <div class="icons">
+                    <div class="quality">
+                      CAM
+                    </div>
+                  </div><a href="/movie/the-super-mario-bros-movie-vqlpl" title="The Super Mario Bros. Movie" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/a/a6/a626a19dca19799450594250720ebf38.jpg-w280" alt="a626a19dca19799450594250720ebf38"></a> <span class="imdb">7.30</span>
+                  <h3><a class="title" title="The Super Mario Bros. Movie" href="/movie/the-super-mario-bros-movie-vqlpl">The Super Mario Bros. Movie</a></h3>
+                  <div class="meta">
+                    2023 92 min <i class="type">Movie</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="wqvz6?/cache76ae02">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="/movie/ant-man-and-the-wasp-quantumania-wqvz6" title="Ant-Man and the Wasp: Quantumania" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/a/ac/ac157eea8c32a389c14069796a106105.jpg-w280" alt="ac157eea8c32a389c14069796a106105"></a> <span class="imdb">6.20</span>
+                  <h3><a class="title" title="Ant-Man and the Wasp: Quantumania" href="/movie/ant-man-and-the-wasp-quantumania-wqvz6">Ant-Man and the Wasp: Quantumania</a></h3>
+                  <div class="meta">
+                    2023 124 min <i class="type">Movie</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="j2ywy?/cache2e56c8">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="/series/south-park-j2ywy" title="South Park" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/d/d4/d4f53d80810b9c0ee3d0464a59ab8580.jpg-w280" alt="d4f53d80810b9c0ee3d0464a59ab8580"></a> <span class="imdb">8.70</span>
+                  <h3><a class="title" title="South Park" href="/series/south-park-j2ywy">South Park</a></h3>
+                  <div class="meta">
+                    SS 26 EP 6 <i class="type">TV</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="roxqo?/cacheea3a0f">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="/series/the-great-roxqo" title="The Great" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/3/3a/3a3289e8328e3954275080688e7071ed.jpg-w280" alt="3a3289e8328e3954275080688e7071ed"></a> <span class="imdb">8.20</span>
+                  <h3><a class="title" title="The Great" href="/series/the-great-roxqo">The Great</a></h3>
+                  <div class="meta">
+                    SS 3 EP 10 <i class="type">TV</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="zkp43?/cachee9c082">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="/series/succession-zkp43" title="Succession" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/5/51/51a4b52bacd524f3808600a7b0fa4773.jpg-w280" alt="51a4b52bacd524f3808600a7b0fa4773"></a> <span class="imdb">8.80</span>
+                  <h3><a class="title" title="Succession" href="/series/succession-zkp43">Succession</a></h3>
+                  <div class="meta">
+                    SS 4 EP 7 <i class="type">TV</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="5wpvm?/cache22ae75">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="/movie/renfield-5wpvm" title="Renfield" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/0/0d/0dae29436d8afb99cdf220079743b962.jpg-w280" alt="0dae29436d8afb99cdf220079743b962"></a> <span class="imdb">6.40</span>
+                  <h3><a class="title" title="Renfield" href="/movie/renfield-5wpvm">Renfield</a></h3>
+                  <div class="meta">
+                    2023 93 min <i class="type">Movie</i>
+                  </div>
+                </div>
+                <div class="item" data-tip="kxz9r?/cachee46a11">
+                  <div class="icons">
+                    <div class="quality">
+                      HD
+                    </div>
+                  </div><a href="/series/the-flash-kxz9r" title="The Flash" class="poster"><img src="https://static.bunnycdn.ru/i/cache/images/7/7b/7b1f491e410cba0b10bcabfcfddd65fd.jpg-w280" alt="7b1f491e410cba0b10bcabfcfddd65fd"></a> <span class="imdb">7.50</span>
+                  <h3><a class="title" title="The Flash" href="/series/the-flash-kxz9r">The Flash</a></h3>
+                  <div class="meta">
+                    SS 9 EP 11 <i class="type">TV</i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!-- </div> -->
+        </div>
+        
+        <section id="banner-ads">
+          <div class="container">
+            <div class="row">
+              <div class="banners">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  <a href="/" title=""><img src="/images/banner-ads.jpg" alt=""></a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  <a href="/" title=""><img src="/images/banner-ads.jpg" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <!-- LATEST MOVIES -->
+        <div id="latest-movies">
+          <div class="heading">
+            <h2>Latest Movies</h2><a class="more" href="https://fmovies.wtf/movies">View all</a>
+          </div>
+          <div class="content">
+            <div class="filmlist">
+              <div class="item tooltipstered" data-tip="vqlpl?/cache05622e">
+                <div class="icons">
+                  <div class="quality">
+                    HD
+                  </div>
+                </div><a href="https://fmovies.wtf/movie/the-super-mario-bros-movie-vqlpl" title="The Super Mario Bros. Movie" class="poster"><img src="./FMovies%20_%20Watch%20Movies%20Online%20Free%20on%20FMovies.to_files/a626a19dca19799450594250720ebf38.jpg-w280" alt="a626a19dca19799450594250720ebf38"></a> <span class="imdb">7.30</span>
+                <h3><a class="title" title="The Super Mario Bros. Movie" href="https://fmovies.wtf/movie/the-super-mario-bros-movie-vqlpl">The Super Mario Bros. Movie</a></h3>
+                <div class="meta">
+                  2023 92 min <i class="type">Movie</i>
+                </div>
+              </div>
+              <div class="item tooltipstered" data-tip="kxnzw?/cachec750d2">
+                <div class="icons">
+                  <div class="quality">
+                    CAM
+                  </div>
+                </div><a href="https://fmovies.wtf/movie/blackberry-kxnzw" title="BlackBerry" class="poster"><img src="./FMovies%20_%20Watch%20Movies%20Online%20Free%20on%20FMovies.to_files/71a8f97993a658049ee3ad8e1250238d.jpg-w280" alt="71a8f97993a658049ee3ad8e1250238d"></a> <span class="imdb">7.90</span>
+                <h3><a class="title" title="BlackBerry" href="https://fmovies.wtf/movie/blackberry-kxnzw">BlackBerry</a></h3>
+                <div class="meta">
+                  2023 120 min <i class="type">Movie</i>
+                </div>
+              </div>
+              <div class="item tooltipstered" data-tip="60rkp?/cachec15a6f">
+                <div class="icons">
+                  <div class="quality">
+                    HD
+                  </div>
+                </div><a href="https://fmovies.wtf/movie/the-journey-a-music-special-from-andrea-bocelli-60rkp" title="The Journey: A Music Special from Andrea Bocelli" class="poster"><img src="./FMovies%20_%20Watch%20Movies%20Online%20Free%20on%20FMovies.to_files/03b7d9771ae72f8fbc2f61189970efaf.jpg-w280" alt="03b7d9771ae72f8fbc2f61189970efaf"></a> <span class="imdb">8.20</span>
+                <h3><a class="title" title="The Journey: A Music Special from Andrea Bocelli" href="https://fmovies.wtf/movie/the-journey-a-music-special-from-andrea-bocelli-60rkp">The Journey: A Music Special from Andrea Bocelli</a></h3>
+                <div class="meta">
+                  2023 na min <i class="type">Movie</i>
+                </div>
+              </div>
+              <div class="item tooltipstered" data-tip="70vl6?/cachef17c4e">
+                <div class="icons">
+                  <div class="quality">
+                    HD
+                  </div>
+                </div><a href="https://fmovies.wtf/movie/this-world-murder-in-mayfair-70vl6" title="&quot;This World&quot; Murder in Mayfair" class="poster"><img src="./FMovies%20_%20Watch%20Movies%20Online%20Free%20on%20FMovies.to_files/d1245cb0d34d82c68ce6d37d98b0d2f4.jpg-w280" alt="d1245cb0d34d82c68ce6d37d98b0d2f4"></a> <span class="imdb">?</span>
+                <h3><a class="title" title="&quot;This World&quot; Murder in Mayfair" href="https://fmovies.wtf/movie/this-world-murder-in-mayfair-70vl6">"This World" Murder in Mayfair</a></h3>
+                <div class="meta">
+                  2023 na min <i class="type">Movie</i>
+                </div>
+              </div>
+              <div class="item tooltipstered" data-tip="j2myn?/cachea3f298">
+                <div class="icons">
+                  <div class="quality">
+                    HD
+                  </div>
+                </div><a href="https://fmovies.wtf/movie/just-jake-j2myn" title="Just Jake" class="poster"><img src="./FMovies%20_%20Watch%20Movies%20Online%20Free%20on%20FMovies.to_files/589da94ba304ff486c35924017c15451.jpg-w280" alt="589da94ba304ff486c35924017c15451"></a> <span class="imdb">?</span>
+                <h3><a class="title" title="Just Jake" href="https://fmovies.wtf/movie/just-jake-j2myn">Just Jake</a></h3>
+                <div class="meta">
+                  2023 na min <i class="type">Movie</i>
+                </div>
+              </div>
+              <div class="item tooltipstered" data-tip="82wmo?/cachebab28c">
+                <div class="icons">
+                  <div class="quality">
+                    HD
+                  </div>
+                </div><a href="https://fmovies.wtf/movie/attack-of-the-doc-82wmo" title="Attack of the Doc!" class="poster"><img src="./FMovies%20_%20Watch%20Movies%20Online%20Free%20on%20FMovies.to_files/1b599353deaed32de4447e34a6f8ab32.jpg-w280" alt="1b599353deaed32de4447e34a6f8ab32"></a> <span class="imdb">8.60</span>
+                <h3><a class="title" title="Attack of the Doc!" href="https://fmovies.wtf/movie/attack-of-the-doc-82wmo">Attack of the Doc!</a></h3>
+                <div class="meta">
+                  2023 87 min <i class="type">Movie</i>
+                </div>
+              </div>
+              <div class="item tooltipstered" data-tip="9jxn8?/cacheff0fa4">
+                <div class="icons">
+                  <div class="quality">
+                    HD
+                  </div>
+                </div><a href="https://fmovies.wtf/movie/that-great-british-documentary-9jxn8" title="That Great British Documentary" class="poster"><img src="./FMovies%20_%20Watch%20Movies%20Online%20Free%20on%20FMovies.to_files/4e6a39f3125f81140cf127894ef27ca9.jpg-w280" alt="4e6a39f3125f81140cf127894ef27ca9"></a> <span class="imdb">2.20</span>
+                <h3><a class="title" title="That Great British Documentary" href="https://fmovies.wtf/movie/that-great-british-documentary-9jxn8">That Great British Documentary</a></h3>
+                <div class="meta">
+                  2023 60 min <i class="type">Movie</i>
+                </div>
+              </div>
+              <div class="item tooltipstered" data-tip="kxn7w?/cache331d31">
+                <div class="icons">
+                  <div class="quality">
+                    CAM
+                  </div>
+                </div><a href="https://fmovies.wtf/movie/hypnotic-kxn7w" title="Hypnotic" class="poster"><img src="./FMovies%20_%20Watch%20Movies%20Online%20Free%20on%20FMovies.to_files/7726f55d9dffbc3f7dd1419033450bc1.jpg-w280" alt="7726f55d9dffbc3f7dd1419033450bc1"></a> <span class="imdb">5.60</span>
+                <h3><a class="title" title="Hypnotic" href="https://fmovies.wtf/movie/hypnotic-kxn7w">Hypnotic</a></h3>
+                <div class="meta">
+                  2023 92 min <i class="type">Movie</i>
+                </div>
+              </div>
+              <div class="item tooltipstered" data-tip="lxo73?/cacheb34755">
+                <div class="icons">
+                  <div class="quality">
+                    CAM
+                  </div>
+                </div><a href="https://fmovies.wtf/movie/fools-paradise-lxo73" title="Fool's Paradise" class="poster"><img src="./FMovies%20_%20Watch%20Movies%20Online%20Free%20on%20FMovies.to_files/5cbb2a74d275f715d48e2953e62931be.jpg-w280" alt="5cbb2a74d275f715d48e2953e62931be"></a> <span class="imdb">5.40</span>
+                <h3><a class="title" title="Fool's Paradise" href="https://fmovies.wtf/movie/fools-paradise-lxo73">Fool's Paradise</a></h3>
+                <div class="meta">
+                  2023 98 min <i class="type">Movie</i>
+                </div>
+              </div>
+              <div class="item tooltipstered" data-tip="mjpnx?/cache0b5bb3">
+                <div class="icons">
+                  <div class="quality">
+                    HD
+                  </div>
+                </div><a href="https://fmovies.wtf/movie/maid-for-revenge-mjpnx" title="Maid for Revenge" class="poster"><img src="./FMovies%20_%20Watch%20Movies%20Online%20Free%20on%20FMovies.to_files/832b1f72376a08c58988a8815da34382.jpg-w280" alt="832b1f72376a08c58988a8815da34382"></a> <span class="imdb">5.00</span>
+                <h3><a class="title" title="Maid for Revenge" href="https://fmovies.wtf/movie/maid-for-revenge-mjpnx">Maid for Revenge</a></h3>
+                <div class="meta">
+                  2023 na min <i class="type">Movie</i>
+                </div>
+              </div>
+              <div class="item tooltipstered" data-tip="j2m7n?/cache64b878">
+                <div class="icons">
+                  <div class="quality">
+                    HD
+                  </div>
+                </div><a href="https://fmovies.wtf/movie/dream-moms-j2m7n" title="Dream Moms" class="poster"><img src="./FMovies%20_%20Watch%20Movies%20Online%20Free%20on%20FMovies.to_files/4139cdcfb5a0500be60db2da384422c2.jpg-w280" alt="4139cdcfb5a0500be60db2da384422c2"></a> <span class="imdb">6.50</span>
+                <h3><a class="title" title="Dream Moms" href="https://fmovies.wtf/movie/dream-moms-j2m7n">Dream Moms</a></h3>
+                <div class="meta">
+                  2023 na min <i class="type">Movie</i>
+                </div>
+              </div>
+              <div class="item tooltipstered" data-tip="70vp7?/cache876906">
+                <div class="icons">
+                  <div class="quality">
+                    HD
+                  </div>
+                </div><a href="https://fmovies.wtf/movie/aloners-70vp7" title="Aloners" class="poster"><img src="./FMovies%20_%20Watch%20Movies%20Online%20Free%20on%20FMovies.to_files/9229cbf21e2e29856bffc3a6b370ed86.jpg-w280" alt="9229cbf21e2e29856bffc3a6b370ed86"></a> <span class="imdb">6.80</span>
+                <h3><a class="title" title="Aloners" href="https://fmovies.wtf/movie/aloners-70vp7">Aloners</a></h3>
+                <div class="meta">
+                  2021 91 min <i class="type">Movie</i>
+                </div>
+              </div>
+              <div class="item tooltipstered" data-tip="82wqv?/cachebc3b3f">
+                <div class="icons">
+                  <div class="quality">
+                    CAM
+                  </div>
+                </div><a href="https://fmovies.wtf/movie/rally-road-racers-82wqv" title="Rally Road Racers" class="poster"><img src="./FMovies%20_%20Watch%20Movies%20Online%20Free%20on%20FMovies.to_files/a3ad1e9e4cf6e2fea9ac72f46ad6d905.jpg-w280" alt="a3ad1e9e4cf6e2fea9ac72f46ad6d905"></a> <span class="imdb">6.00</span>
+                <h3><a class="title" title="Rally Road Racers" href="https://fmovies.wtf/movie/rally-road-racers-82wqv">Rally Road Racers</a></h3>
+                <div class="meta">
+                  2023 93 min <i class="type">Movie</i>
+                </div>
+              </div>
+              <div class="item tooltipstered" data-tip="41pmm?/cache76410f">
+                <div class="icons">
+                  <div class="quality">
+                    HD
+                  </div>
+                </div><a href="https://fmovies.wtf/movie/mutzenbacher-41pmm" title="Mutzenbacher" class="poster"><img src="./FMovies%20_%20Watch%20Movies%20Online%20Free%20on%20FMovies.to_files/3ddf428516e26d16e5a4d6415db4f3e6.jpg-w280" alt="3ddf428516e26d16e5a4d6415db4f3e6"></a> <span class="imdb">6.60</span>
+                <h3><a class="title" title="Mutzenbacher" href="https://fmovies.wtf/movie/mutzenbacher-41pmm">Mutzenbacher</a></h3>
+                <div class="meta">
+                  2022 100 min <i class="type">Movie</i>
+                </div>
+              </div>
+              <div class="item tooltipstered" data-tip="20nk4?/cache9788ce">
+                <div class="icons">
+                  <div class="quality">
+                    HD
+                  </div>
+                </div><a href="https://fmovies.wtf/movie/adventures-in-game-chasing-20nk4" title="Adventures in Game Chasing" class="poster"><img src="./FMovies%20_%20Watch%20Movies%20Online%20Free%20on%20FMovies.to_files/961e1e1f451cdd93c4647d4a2a919f63.jpg-w280" alt="961e1e1f451cdd93c4647d4a2a919f63"></a> <span class="imdb">5.60</span>
+                <h3><a class="title" title="Adventures in Game Chasing" href="https://fmovies.wtf/movie/adventures-in-game-chasing-20nk4">Adventures in Game Chasing</a></h3>
+                <div class="meta">
+                  2022 101 min <i class="type">Movie</i>
+                </div>
+              </div>
+              <div class="item tooltipstered" data-tip="roxvo?/cache24045a">
+                <div class="icons">
+                  <div class="quality">
+                    HD
+                  </div>
+                </div><a href="https://fmovies.wtf/movie/the-irish-mob-roxvo" title="The Irish Mob" class="poster"><img src="./FMovies%20_%20Watch%20Movies%20Online%20Free%20on%20FMovies.to_files/e8f84106706e05dfa19c384e9f3514ca.jpg-w280" alt="e8f84106706e05dfa19c384e9f3514ca"></a> <span class="imdb">5.60</span>
+                <h3><a class="title" title="The Irish Mob" href="https://fmovies.wtf/movie/the-irish-mob-roxvo">The Irish Mob</a></h3>
+                <div class="meta">
+                  2023 80 min <i class="type">Movie</i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col about">
+                    <div>
+                        <div class="logo"> 
+                            <img src="https://s1.bunnycdn.ru/assets/sites/fmovies/logo2.png"> 
+                        </div>
+                        <div class="desc">
+                            <p>FMovies is top of <strong>free streaming website</strong>, where to watch movies online free without registration required. With a big database and great features, we're confident FMovies is the best free movies online website in the space that you can't simply miss! </p>
+                            <p> 
+                                <a href="https://twitter.com/fmoviesdotto" target="_blank"> <i class="fab fa-twitter"></i> Connect with us on twitter </a> 
+                            </p>
+                            <p class="small font-italic">This site does not store any files on our server, we only linked to the media which is hosted on 3rd party services.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="links">
+                    <div class="bl">
+                        <div class="heading">Links</div>
+                        <ul>
+                            <li> <a href="/movies">Movies</a> </li>
+                            <li> <a href="/tv-series">TV-Shows</a> </li>
+                            <li> <a href="/most-watched">Most Watched</a> </li>
+                            <li> <a href="/top-imdb">Top IMDb</a> </li>
+                        </ul>
+                    </div>
+                    <div class="bl">
+                        <div class="heading"></div>
+                        <ul>
+                            <li> <a href="genre/action" title="Action Movies and Shows">Action Movies</a> </li>
+                            <li> <a href="genre/horror" title="Horror Movies and Shows">Horror Movies</a> </li>
+                            <li> <a href="genre/sci-fi" title="Sci-fi Movies and Shows">Sci-fi Movies</a> </li>
+                            <li> <a href="genre/thriller" title="Thriller Movies and Shows">Thriller Movies</a> </li>
+                        </ul>
+                    </div>
+                    <div class="bl">
+                        <div class="heading"></div>
+                        <ul>
+                            <li> <a href="contact" title="Contact us">Contact</a> </li>
+                            <li> <a href="#" data-toggle="modal" data-target="#md-request">Request</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="md-register" tabindex="-1" role="dialog" aria-hidden="true" data-autodismiss="true">
+        <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 420px">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="modal-title">Create Account</div>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span class="closeBtn" aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p class="text-muted">Create an account to enjoy more features</p>
+              <div style="display: none;"></div>
+              <form autocomplete="off" class="ajax" data-action="ajax/user/register" data-user="true">
+                <div class="form-group">
+                  <label>Username</label>
+                  <input type="text" class="form-control form-control-lg" name="username" placeholder="Your username" required="">
+                </div>
+                <div class="form-group">
+                  <label>Email address</label>
+                  <input type="email" class="form-control form-control-lg" name="email" placeholder="Your email" required="">
+                </div>
+                <div class="form-group">
+                  <label>Password</label>
+                  <input type="password" class="form-control form-control-lg" name="password" placeholder="Your password" required="">
+                </div>
+                <div class="form-group">
+                  <label>Password confirmation</label>
+                  <input type="password" class="form-control form-control-lg" name="password_confirmation" placeholder="Repeat your password" required="">
+                </div>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-sm-5">
+                      <img class="captcha tip" data-src="https://fmovies.wtf/captcha/default?xQm0Y8yt" title="" style="cursor: pointer;" data-original-title="Click to reload">
+                    </div>
+                    <div class="col-sm-7">
+                      <input type="text" class="form-control form-control-lg" name="captcha" placeholder="Enter the captcha" required="">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group mt-4">
+                  <button type="submit" class="btn rd full mt-2 btn-lg btn-primary">Register</button>
+                </div>
+                <div class="loader"></div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <span class="text-muted">Already have an account?</span>
+              <a href="https://fmovies.wtf/#" data-rmodal="#md-login">Sign in</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="md-login" tabindex="-1" role="dialog" data-autodismiss="true" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 420px">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="modal-title">Sign In</div>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span class="close-Btn" aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div style="display: none;"></div>
+              <form id="loginForm" autocomplete="off" class="ajax" data-action="ajax/user/login" data-user="true">
+                <div class="form-group">
+                  <label>Your account</label>
+                  <input type="text" class="form-control form-control-lg" name="username" placeholder="Your username or email" required="">
+                </div>
+                <div class="form-group">
+                  <label>Password</label>
+                  <input type="password" class="form-control  form-control-lg" name="password" placeholder="Password" required="">
+                  <small class="form-text text-muted2 text-right">
+                    <a href="https://fmovies.wtf/#" data-rmodal="#md-forgot-password">Forgot your password?</a>
+                  </small>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="remember" name="remember" checked="checked">
+                  <label class="form-check-label" for="remember">Remember me</label>
+                </div>
+                <div class="form-group mt-4">
+                  <button type="submit" class="btn full mt-2 btn-lg btn-primary">Login</button>
+                </div>
+                <div class="loader"></div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <span class="text-muted">Don't have an account? </span>
+              <a href="https://fmovies.wtf/#" data-rmodal="#md-register">Register</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="md-forgot-password" data-prevent-duplicate="true" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 420px">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="modal-title">Reset Password</div>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span class="closeBtn" aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div style="display: none;"></div>
+              <form autocomplete="off" class="ajax" data-action="ajax/user/forgot-password">
+                <div class="form-group">
+                  <label>Your account</label>
+                  <input type="text" class="form-control form-control-lg" name="identifier" placeholder="Enter your username or email" required="">
+                </div>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-sm-5">
+                      <img class="captcha tip" data-src="https://fmovies.wtf/captcha/default?yhrie3DV" title="" style="cursor: pointer;" data-original-title="Click to reload">
+                    </div>
+                    <div class="col-sm-7">
+                      <input type="text" class="form-control form-control-lg" name="captcha" placeholder="Enter the captcha" required="">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group mt-4">
+                  <button type="button" class="submit btn rd full mt-2 btn-lg btn-primary">Forgot</button>
+                </div>
+                <div class="loader"></div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <a href="https://fmovies.wtf/#" data-rmodal="#md-login">Back to Sign In</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="md-request" data-prevent-duplicate="true" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 450px">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="modal-title">Send Your Request</div>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body mb-3">
+              <p class="text-muted">If your movie/shows isn't listed in our library, you can send your request here, we will try to make it available asap!</p>
+              <div style="display: none;"></div>
+              <form autocomplete="off" class="ajax" data-action="ajax/film/request" data-source="ajax/film/search?form=request" data-once="true">
+                <div class="form-group">
+                  <label>Email</label>
+                  <input type="email" class="form-control form-control-lg" name="email" placeholder="Your email" required="">
+                </div>
+                <div class="form-group">
+                  <label>Title</label>
+                  <input type="text" class="autocomplete form-control form-control-lg" name="title" placeholder="Enter your movie/show name" required="" autocomplete="off">
+                </div>
+                <div class="suggestions" style="display:none"></div>
+                <div class="form-group">
+                  <label>Description</label>
+                  <input type="text" class="form-control form-control-lg" name="description" placeholder="Link IMDb if possible" required="">
+                </div>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-sm-5">
+                      <img class="captcha tip" data-src="https://fmovies.wtf/captcha/default?KQGhWVy1" title="" style="cursor: pointer;" data-original-title="Click to reload">
+                    </div>
+                    <div class="col-sm-7">
+                      <input type="text" class="form-control form-control-lg" name="captcha" placeholder="Enter the captcha" required="">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group mt-4">
+                  <button type="button" class="submit btn rd full mt-2  mb-4 btn-lg btn-primary">Send Request</button>
+                </div>
+                <input type="hidden" name="vrf">
+                <div class="loader"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MODAL -->
+
+      <!-- <script>
+        // Add this JavaScript code to initialize the Swiper slider
+        const swiper = new Swiper('#slider', {
+            // Specify the desired options for the Swiper slider
+            slidesPerView: 'auto',
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script> -->
+
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <!-- <script defer src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script defer src="./node_modules/@fortawesome/fontawesome-free/js/fontawesome.min.js"></script>
+    <script defer src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script defer src="./assets/js/main.js"></script>
+  </body>
+</html>
