@@ -2,41 +2,40 @@
 @section('content')
 <!-- MAIN CONTENT -->
 <div id="watch-video">
-    
+  @foreach ( $findMovie as $movie)
     <div class="nav"> <!--BREADCRUMBS-->
         <div class="container">
-            <ol class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
-            <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-                <a itemprop="item" href="https://fmovies.wtf/" title="Watch online movies">
+            <ol class="breadcrumb" itemscope="">
+            <li class="breadcrumb-item" itemprop="itemListElement" itemscope="">
+                <a itemprop="item" href="{{route('index')}}" title="Watch online movies">
                 <span itemprop="name">Home</span>
                 </a>
                 <meta itemprop="position" content="1">
             </li>
-            <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-                <a itemprop="item" href="https://fmovies.wtf/movies" title="Movies">
+            <li class="breadcrumb-item" itemprop="itemListElement" itemscope="">
+                <a itemprop="item" href="" title="Movies">
                 <span itemprop="name">Movies</span>
                 </a>
                 <meta itemprop="position" content="2">
             </li>
-            <li class="breadcrumb-item active" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-                <a itemprop="item" href="https://fmovies.wtf/movie/hypnotic-kxn7w" title="Hypnotic">
-                <span itemprop="name">Hypnotic</span>
+            <li class="breadcrumb-item active" itemprop="itemListElement" itemscope="">
+                <a itemprop="item" href="#" title="{{$movie['title']}}">
+                <span itemprop="name">{{$movie['title']}}</span>
                 </a>
                 <meta itemprop="position" content="3">
             </li>
             </ol>
         </div>
     </div>
-
     <div id="watch" data-id="kxn7w" data-type="movie" data-short-url="https://fmovies.wtf/watch/kxn7w" data-epid="" data-epname="">
-      <div class="play" style="background-image:url()">
+      <div class="play" style="background-image:url('https://image.tmdb.org/t/p/w500/{{$movie['poster_path']}}')">
         <div class="container">
           <div class="d-flex justify-content-center" style="position: relative; z-index: 2;">
             <div id="bg_00000000"></div>
             
             <div class="bg-ssp-6140" style="width:728px!important;height:90px!important;position:relative!important;text-align:left!important;overflow:hidden!important;">
               <div style="display:none">
-                <img data-cfasync="false" src="./FMovies _ Watch Hypnotic (2023) Online Free on fmovies.wtf_files/rec" rel="noindex nofollow" referrerpolicy="unsafe-url">
+                <img data-cfasync="false" src="./FMovies _ Watch Hypnotic (2023) Online Free on fmovies.wtf_files/re`c" rel="noindex nofollow" referrerpolicy="unsafe-url">
               </div>
               <script data-cfasync="false" async="" type="text/javascript" src="./FMovies _ Watch Hypnotic (2023) Online Free on fmovies.wtf_files/60442"></script>
               <style>
@@ -175,17 +174,18 @@
           </div>
           <div class="clearfix"></div>
         </div>
-        
+
         <div class="watch-extra" itemscope="" itemtype="http://schema.org/Movie">
+        @foreach ( $findMovie as $movie)
           <div class="bl-1">
             <section class="info">
               <div class="poster">
                 <span>
-                  <img itemprop="image" src="./FMovies _ Watch Hypnotic (2023) Online Free on fmovies.wtf_files/7726f55d9dffbc3f7dd1419033450bc1.jpg-w380" alt="Hypnotic 2023">
+                  <img itemprop="image" src="https://image.tmdb.org/t/p/w500/{{$movie['poster_path']}}" alt="">
                 </span>
               </div>
               <div class="info">
-                <div class="rating" itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating" data-value="5.8" data-count="60">
+                {{-- <div class="rating" itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating" data-value="5.8" data-count="60">
                   <meta itemprop="bestRating" content="10">
                   <span class="stars">
                     <span class="fa fa-star" data-value="2">
@@ -207,33 +207,32 @@
                   <span class="text" data-text="&lt;span itemprop=&#39;ratingValue&#39;&gt;$1&lt;/span&gt; of &lt;span itemprop=&#39;ratingCount&#39;&gt;$2&lt;/span&gt;">
                     <span itemprop="ratingValue">5.8</span> of <span itemprop="ratingCount">60</span>
                   </span>
-                </div>
-                <h1 itemprop="name" class="title">Hypnotic</h1>
+                </div> --}}
+                <h1 itemprop="name" class="title">{{$movie['title']}}</h1>
                 <div class="meta lg">
-                  <span class="quality">CAM</span>
                   <span class="imdb">
-                    <i class="fa fa-star"></i> 5.60 </span>
-                  <span>92 min</span>
+                    <i class="fa fa-star"></i> {{$movie['vote_average']}} </span>
                 </div>
-                <div itemprop="description" class="desc shorting" data-type="text"> A detective investigates a mystery involving his missing daughter and a secret government program. </div>
+                <div itemprop="description" class="desc shorting" data-type="text"> {{$movie['overview']}} </div>
                 <div class="meta">
-                  <div>
-                    <span>Country:</span>
-                    <span>
-                      <a href="https://fmovies.wtf/country/united-states" title="United States movies">United States</a>
-                    </span>
-                  </div>
                   <div>
                     <span>Genre:</span>
                     <span>
-                      <a href="https://fmovies.wtf/genre/thriller" title="Thriller">Thriller</a>, <a href="https://fmovies.wtf/genre/action" title="Action">Action</a>, <a href="https://fmovies.wtf/genre/mystery" title="Mystery">Mystery</a>
+
+                      @foreach ( $genres as $genre )
+                        @foreach ( $movie['genre_ids'] as $id)                  
+                            @if ($id == $genre['id'])
+                            <a href="https://fmovies.wtf/genre/thriller" title="{{$genre['name']}}">{{$genre['name']}}</a>,                           
+                            @endif        
+                          @endforeach
+                      @endforeach
                     </span>
                   </div>
                   <div>
                     <span>Release:</span>
-                    <span itemprop="dateCreated">2023-05-11</span>
+                    <span itemprop="dateCreated">{{$movie['release_date']}}</span>
                   </div>
-                  <div>
+                  {{-- <div>
                     <span>Director:</span>
                     <span class="shorting" data-max="20">Robert Rodriguez</span>
                   </div>
@@ -262,7 +261,7 @@
                     </span>
                   </div>
                 </div>
-              </div>
+              </div> --}}
               <div class="clearfix"></div>
             </section>
             <section id="comment" class="bl" data-src="https://fmoviescomment.disqus.com/embed.js" data-identifier="66601" data-url="https://fmovies.wtf/watch/kxn7w">
@@ -270,7 +269,8 @@
                 <h2 class="title">Comment</h2>
               </div>
             </section>
-          </div>
+          </div> 
+        @endforeach
           <div class="bl-2">
             <section class="bl">
               <div class="heading simple">
@@ -278,141 +278,23 @@
               </div>
               <div class="content">
                 <div class="filmlist ">
+                  @foreach ($popularMovies as $movie)
                   <div class="item tooltipstered" data-tip="">
                     <div class="icons">
                       <div class="quality">HD</div>
                     </div>
-                    <a href="https://fmovies.wtf/movie/the-last-thing-he-wanted-rwy1p" title="The Last Thing He Wanted" class="poster">
-                      <img src="./FMovies _ Watch Hypnotic (2023) Online Free on fmovies.wtf_files/59b914f6623c1e34abc25cad09c0fa34.jpg-w280">
+                    <a href="/movie/{{$movie['id']}}" title="{{$movie['title']}}" class="poster">
+                      <img  src="https://image.tmdb.org/t/p/w500/{{$movie['poster_path']}}">
                     </a>
                     <span class="imdb">
-                      <i class="fa fa-star"></i> 4.30 </span>
+                      <i class="fa fa-star"></i> {{$movie['vote_average']}} </span>
                     <h3>
-                      <a class="title" title="The Last Thing He Wanted" href="https://fmovies.wtf/movie/the-last-thing-he-wanted-rwy1p">The Last Thing He Wanted</a>
+                      <a class="title" href="/movie/{{$movie['id']}}" title="{{$movie['title']}}">{{$movie['title']}}</a>
                     </h3>
-                    <div class="meta"> 2020 <i class="dot"></i> 115 min <i class="type">Movie</i>
+                    <div class="meta"> {{ \Carbon\Carbon::parse($movie['release_date'])->format('M d, Y')}}  <i class="type"> Movie </i>
                     </div>
                   </div>
-                  <div class="item tooltipstered" data-tip="yv920?/cache1f2531">
-                    <div class="icons">
-                      <div class="quality">HD</div>
-                    </div>
-                    <a href="https://fmovies.wtf/movie/the-way-back-yv920" title="The Way Back" class="poster">
-                      <img src="./FMovies _ Watch Hypnotic (2023) Online Free on fmovies.wtf_files/32a648e3411f3fd8fb6f4c01bb85bdae.jpg-w280">
-                    </a>
-                    <span class="imdb">
-                      <i class="fa fa-star"></i> 6.70 </span>
-                    <h3>
-                      <a class="title" title="The Way Back" href="https://fmovies.wtf/movie/the-way-back-yv920">The Way Back</a>
-                    </h3>
-                    <div class="meta"> 2020 <i class="dot"></i> 108 min <i class="type">Movie</i>
-                    </div>
-                  </div>
-                  <div class="item tooltipstered" data-tip="ox7oy?/cache442a45">
-                    <div class="icons">
-                      <div class="quality">HD</div>
-                    </div>
-                    <a href="https://fmovies.wtf/movie/the-new-mutants-ox7oy" title="The New Mutants" class="poster">
-                      <img src="./FMovies _ Watch Hypnotic (2023) Online Free on fmovies.wtf_files/d7061c9ec12ab6463ddb9cf3bc094118.jpg-w280">
-                    </a>
-                    <span class="imdb">
-                      <i class="fa fa-star"></i> 5.30 </span>
-                    <h3>
-                      <a class="title" title="The New Mutants" href="https://fmovies.wtf/movie/the-new-mutants-ox7oy">The New Mutants</a>
-                    </h3>
-                    <div class="meta"> 2020 <i class="dot"></i> 94 min <i class="type">Movie</i>
-                    </div>
-                  </div>
-                  <div class="item tooltipstered" data-tip="2p1w2?/cacheadf14b">
-                    <div class="icons">
-                      <div class="quality">HD</div>
-                    </div>
-                    <a href="https://fmovies.wtf/movie/zack-snyders-justice-league-2p1w2" title="Zack Snyder&#39;s Justice League" class="poster">
-                      <img src="./FMovies _ Watch Hypnotic (2023) Online Free on fmovies.wtf_files/49c0319033c95ae52c04adcb9b5ee99c.jpg-w280">
-                    </a>
-                    <span class="imdb">
-                      <i class="fa fa-star"></i> 8.00 </span>
-                    <h3>
-                      <a class="title" title="Zack Snyder&#39;s Justice League" href="https://fmovies.wtf/movie/zack-snyders-justice-league-2p1w2">Zack Snyder's Justice League</a>
-                    </h3>
-                    <div class="meta"> 2021 <i class="dot"></i> 242 min <i class="type">Movie</i>
-                    </div>
-                  </div>
-                  <div class="item tooltipstered" data-tip="17qmv?/cachee4106d">
-                    <div class="icons">
-                      <div class="quality">HD</div>
-                    </div>
-                    <a href="https://fmovies.wtf/movie/hypnotic-17qmv" title="Hypnotic" class="poster">
-                      <img src="./FMovies _ Watch Hypnotic (2023) Online Free on fmovies.wtf_files/7e672b3ed0a0fdf5f7b9b011f7f45ec6.jpg-w280">
-                    </a>
-                    <span class="imdb">
-                      <i class="fa fa-star"></i> 5.30 </span>
-                    <h3>
-                      <a class="title" title="Hypnotic" href="https://fmovies.wtf/movie/hypnotic-17qmv">Hypnotic</a>
-                    </h3>
-                    <div class="meta"> 2021 <i class="dot"></i> 88 min <i class="type">Movie</i>
-                    </div>
-                  </div>
-                  <div class="item tooltipstered" data-tip="mj3wp?/cacheae253b">
-                    <div class="icons">
-                      <div class="quality">HD</div>
-                    </div>
-                    <a href="https://fmovies.wtf/movie/the-tender-bar-mj3wp" title="The Tender Bar" class="poster">
-                      <img src="./FMovies _ Watch Hypnotic (2023) Online Free on fmovies.wtf_files/09266d8ad041c3a7f46ddb9f13e186ba.jpg-w280">
-                    </a>
-                    <span class="imdb">
-                      <i class="fa fa-star"></i> 6.70 </span>
-                    <h3>
-                      <a class="title" title="The Tender Bar" href="https://fmovies.wtf/movie/the-tender-bar-mj3wp">The Tender Bar</a>
-                    </h3>
-                    <div class="meta"> 2021 <i class="dot"></i> 106 min <i class="type">Movie</i>
-                    </div>
-                  </div>
-                  <div class="item tooltipstered" data-tip="82lzn?/cache9850f1">
-                    <div class="icons">
-                      <div class="quality">HD</div>
-                    </div>
-                    <a href="https://fmovies.wtf/movie/deep-water-82lzn" title="Deep Water" class="poster">
-                      <img src="./FMovies _ Watch Hypnotic (2023) Online Free on fmovies.wtf_files/4a147dd3d6c97a7c93c64c29982e5d3c.jpg-w280">
-                    </a>
-                    <span class="imdb">
-                      <i class="fa fa-star"></i> 5.40 </span>
-                    <h3>
-                      <a class="title" title="Deep Water" href="https://fmovies.wtf/movie/deep-water-82lzn">Deep Water</a>
-                    </h3>
-                    <div class="meta"> 2022 <i class="dot"></i> 115 min <i class="type">Movie</i>
-                    </div>
-                  </div>
-                  <div class="item tooltipstered" data-tip="zkz4p?/cache26eefb">
-                    <div class="icons">
-                      <div class="quality">HD</div>
-                    </div>
-                    <a href="https://fmovies.wtf/movie/clerks-iii-zkz4p" title="Clerks III" class="poster">
-                      <img src="./FMovies _ Watch Hypnotic (2023) Online Free on fmovies.wtf_files/3563ee0ad3194d5702136574a3d21103.jpg-w280">
-                    </a>
-                    <span class="imdb">
-                      <i class="fa fa-star"></i> 6.30 </span>
-                    <h3>
-                      <a class="title" title="Clerks III" href="https://fmovies.wtf/movie/clerks-iii-zkz4p">Clerks III</a>
-                    </h3>
-                    <div class="meta"> 2022 <i class="dot"></i> 100 min <i class="type">Movie</i>
-                    </div>
-                  </div>
-                  <div class="item tooltipstered" data-tip="41ox7?/cachedecb0d">
-                    <div class="icons">
-                      <div class="quality">HD</div>
-                    </div>
-                    <a href="https://fmovies.wtf/movie/air-41ox7" title="Air" class="poster">
-                      <img src="./FMovies _ Watch Hypnotic (2023) Online Free on fmovies.wtf_files/2e4a6da0bcd98b18c23c8d89e3394de9.jpg-w280">
-                    </a>
-                    <span class="imdb">
-                      <i class="fa fa-star"></i> 7.60 </span>
-                    <h3>
-                      <a class="title" title="Air" href="https://fmovies.wtf/movie/air-41ox7">Air</a>
-                    </h3>
-                    <div class="meta"> 2023 <i class="dot"></i> 111 min <i class="type">Movie</i>
-                    </div>
-                  </div>
+                  @endforeach
                   <div class="clearfix"></div>
                 </div>
               </div>
@@ -422,7 +304,7 @@
         </div>
       </div>
     </div>
-
+    @endforeach
     <div class="modal fade" id="md-share" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 500px">
         <div class="modal-content">
