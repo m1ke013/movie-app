@@ -9,6 +9,7 @@ class ViewAllController extends Controller
     public function movies()
     {
         $data['title'] = "Movies";
+        
         return view('view-all.view-all',$data);
     }
     

@@ -44,6 +44,7 @@
             <i class="fa-solid fa-circle-user"></i>
             <span>Login/ Register</span>
           </div>
+          
         </div>
         <div id="search-toggler">
             <i class="fa-solid fa-magnifying-glass"></i>
