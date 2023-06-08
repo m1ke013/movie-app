@@ -18,6 +18,8 @@ Route::get('/country', function () {
 });
 
 Route::get('/movie/{movie_id:id}', [WatchController:: class,'index'])->name( name: 'view');
+Route::get('/tv_show/{show_id:id}', [WatchController:: class,'tv_show'])->name( name: 'view');
+
 
 Route::get('/movies', [ViewAllController::class, 'movies'])->name('movies');
 Route::get('/tv-series', [ViewAllController::class, 'tv_series'])->name('tv-series');

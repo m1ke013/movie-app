@@ -111,8 +111,8 @@
                   <div class="quality">
                     HD
                   </div>
-                </div><a href="/movie/{{$movie['id']}}" title="{{$movie['name']}}" class="poster"><img src="https://image.tmdb.org/t/p/w500/{{$movie['poster_path']}}" alt=""></a> 
-                <span class="">{{$movie['vote_average']}}</span><h3><a class="title" title="{{$movie['name']}}" href="/movie/{{$movie['id']}}">{{$movie['name']}}</a></h3>
+                </div><a href="/tv_show/{{$movie['id']}}" title="{{$movie['name']}}" class="poster"><img src="https://image.tmdb.org/t/p/w500/{{$movie['poster_path']}}" alt=""></a> 
+                <span class="">{{$movie['vote_average']}}</span><h3><a class="title" title="{{$movie['name']}}" href="/tv_show/{{$movie['id']}}">{{$movie['name']}}</a></h3>
                 <div class="meta">
                   {{ \Carbon\Carbon::parse($movie['first_air_date'])->format('M d, Y')}}<i class="type">{{$movie['media_type']}}</i>
                 </div>

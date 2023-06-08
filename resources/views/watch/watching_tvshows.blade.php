@@ -19,8 +19,8 @@
                 <meta itemprop="position" content="2">
             </li>
             <li class="breadcrumb-item active" itemprop="itemListElement" itemscope="">
-                <a itemprop="item" href="#" title="{{$movie['title']}}">
-                <span itemprop="name">{{$movie['title']}}</span>
+                <a itemprop="item" href="#" title="{{$movie['name']}}">
+                <span itemprop="name">{{$movie['name']}}</span>
                 </a>
                 <meta itemprop="position" content="3">
             </li>
@@ -47,6 +47,32 @@
               
             </div>
           </div>
+        <!-- Season -->
+        <div class="btn-group">
+            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Season
+            </button>
+            <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+        </div>
+        <!-- Episode -->
+        <div class="btn-group">
+            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Episode
+            </button>
+            <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+        </div>
           <div id="video-player">
             {{-- <video id="player" controls>
               <source src="https://mega.nz/folder/Pt8AHLAC#tAte3gNlNossthoHiSCL5w/file/fkN3HKjb" type="video/mkv">
@@ -55,18 +81,12 @@
 
             {{-- <iframe width="560" height="315" src="https://autoembed.to/movie/tmdb/{{$movie_id}}?server=1" frameborder="0" allowfullscreen></iframe>
             <iframe id="player"  src="https://2embed.org/embed/movie?tmdb=603692" allowfullscreen allowtransparency allow="autoplay">  </iframe>  --}}
-            <iframe id="player" src="https://autoembed.to/movie/tmdb/{{$movie_id}}?server=1" allowfullscreen="" allowtransparency="" allow="autoplay">  </iframe>	
-
-            <!--
-			<div id="video2" style="display:none;">
-            <iframe class="iframe2" id="vid" src="https://2embed.org/embed/movie?tmdb=603692" allowfullscreen allowtransparency allow="autoplay">  </iframe> 	
-			<p class="under-video">If the current server is buffering or doesn't work please change a source below!</p>
-			</div>
-				<div class="sources">
-				<div class="source1 source-series-active" onclick="listColorSource(this)" value="1">Source 1</div>
-			  <div class="source2 source-series-active" onclick="listColorSource(this)" value="2">Source 2</div>		
-				</div>
--->
+            {{-- <iframe id="player" src="https://autoembed.to/movie/tmdb/{{$movie_id}}?server=1" allowfullscreen="" allowtransparency="" allow="autoplay">  </iframe>	 --}}
+            {{-- <iframe id="vid-series" src="https://autoembed.to/tv/tmdb/{{$movie_id}}?server=1" allowfullscreen="" allowtransparency="" allow="autoplay">   </iframe> --}}
+						
+            {{-- Movie  ID "-" SEASON "-" EPISODE !!!!!!IMPORTANTE--}}  
+            <iframe id="player" src="https://autoembed.to/tv/tmdb/{{$movie_id}}-{{$season=1}}-{{$episode=1}}?server=1" allowfullscreen="" allowtransparency="" allow="autoplay">   </iframe>
+                        {{-- <iframe id="frame2" src="https://www.2embed.to/embed/tmdb/tv?id={{$movie_id}}" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen="" style="background: rgba(255, 255, 255, 0.79);"></iframe> --}}
           </div>
         </div>
       </div>
@@ -226,7 +246,7 @@
                     <span itemprop="ratingValue">5.8</span> of <span itemprop="ratingCount">60</span>
                   </span>
                 </div> --}}
-                <h1 itemprop="name" class="title">{{$movie['title']}}</h1>
+                <h1 itemprop="name" class="title">{{$movie['name']}}</h1>
                 <div class="meta lg">
                   <span class="imdb">
                     <i class="fa fa-star"></i> {{$movie['vote_average']}} </span>
@@ -248,38 +268,8 @@
                   </div>
                   <div>
                     <span>Release:</span>
-                    <span itemprop="dateCreated">{{$movie['release_date']}}</span>
+                    <span itemprop="dateCreated">{{$movie['first_air_date']}}</span>
                   </div>
-                  {{-- <div>
-                    <span>Director:</span>
-                    <span class="shorting" data-max="20">Robert Rodriguez</span>
-                  </div>
-                  <div>
-                    <span>Production:</span>
-                    <span>
-                      <a href="https://fmovies.wtf/production/ingenious-media" title="Ingenious Media">Ingenious Media</a>
-                    </span>
-                  </div>
-                  <div class="casts">
-                    <span>Cast:</span>
-                    <span class="shorting" data-type="link" data-max="5">
-                      <a itemprop="actor" itemscope="" itemtype="http://schema.org/Person" href="https://fmovies.wtf/star/ben-affleck" title="Ben Affleck">
-                        <span itemprop="name">Ben Affleck</span>
-                      </a>, <a itemprop="actor" itemscope="" itemtype="http://schema.org/Person" href="https://fmovies.wtf/star/alice-braga" title="Alice Braga">
-                        <span itemprop="name">Alice Braga</span>
-                      </a>, <a itemprop="actor" itemscope="" itemtype="http://schema.org/Person" href="https://fmovies.wtf/star/jd-pardo" title="Jd Pardo">
-                        <span itemprop="name">Jd Pardo</span>
-                      </a>
-                    </span>
-                  </div>
-                  <div class="tags">
-                    <span>Tags:</span>
-                    <span>
-                      <a href="https://fmovies.wtf/movie/hypnotic-kxn7w" title="Watch Hypnotic free">watch hypnotic free</a>, <a href="https://fmovies.wtf/movie/hypnotic-kxn7w" title="watch Hypnotic hd">watch hypnotic hd</a>, <a href="https://fmovies.wtf/movie/hypnotic-kxn7w" title="Hypnotic online">hypnotic online</a>, <a href="https://fmovies.wtf/movie/hypnotic-kxn7w" title="where to watch Hypnotic">where to watch hypnotic</a>, <a href="https://fmovies.wtf/movie/hypnotic-kxn7w" title="Hypnotic free online">hypnotic free online</a>, <a href="https://fmovies.wtf/tag/hypnotic" rel="tag">hypnotic</a>
-                    </span>
-                  </div>
-                </div>
-              </div> --}}
               <div class="clearfix"></div>
             </section>
             <section id="comment" class="bl" data-src="https://fmoviescomment.disqus.com/embed.js" data-identifier="66601" data-url="https://fmovies.wtf/watch/kxn7w">
@@ -441,3 +431,4 @@
     </div>
 </div>
 @endsection
+
